@@ -11,6 +11,14 @@
         <title>AutobahnC++: Class Members</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -108,6 +116,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -137,31 +159,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classautobahn_1_1wamp__invocation__impl.html#aa310c722287e63499c6d30cc8e308cba">autobahn::wamp_invocation_impl</a>
 </li>
 <li>attach()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a385ffc9f98571a46dbbe9a6b33da53ff">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a54bb783139b338d587347f1ed865b94c">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#aa66d4c464c03837ca2fb293001882b96">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a885832793fc41f7c2e7dc1c459d54c81">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a50e5ef694980acdf33df523f7d764e52">autobahn::wamp_websocket_transport</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>call()
-: <a class="el" href="classautobahn_1_1wamp__session.html#ab600074598f877502ec392284535726a">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a506a115013039bfa8444353f8d0c93e5">autobahn::wamp_session</a>
 </li>
 <li>connect()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aea1864d6174cbcc7d7181f20c1222afe">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
-, <a class="el" href="classautobahn_1_1wamp__tcp__transport.html#a02ea0ee9dfd4a944ee45f699537236b4">autobahn::wamp_tcp_transport</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a2555c344ee08add2598e8aa90d809a9e">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+, <a class="el" href="classautobahn_1_1wamp__tcp__transport.html#af2dbaa2cbc0d144e15995061c01a8ce1">autobahn::wamp_tcp_transport</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a4ea198cfb1e76bb0b1916029a2b66585">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#abb6a4d27aca48ef36466b7281f8d2acd">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ac7415c55676df83dd76dd96a6bc35628">autobahn::wamp_websocket_transport</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>detach()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aac62d74fde35098e8a830a09cede6ac6">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9622ba671182807e0f8e9abce9bb6ab9">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a69fc40bd16dfa8d519375a29c3b4276e">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a6218f9e9c78ef1d4148048fd681728fe">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a99dfe543cd8d71e50433c9c655ddedbd">autobahn::wamp_websocket_transport</a>
 </li>
 <li>detail()
 : <a class="el" href="classautobahn_1_1wamp__invocation__impl.html#a25d03102258ec4e940a37bc6c154c347">autobahn::wamp_invocation_impl</a>
@@ -173,9 +195,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classautobahn_1_1wamp__invocation__impl.html#a6013b21bcf71387c88bc4248412a034e">autobahn::wamp_invocation_impl</a>
 </li>
 <li>disconnect()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a07891c8d9d112615de639e4e3bc1aa20">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a7ae409074a0b522e3b1db87e417117bc">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a5abfd162d32de8cd7b8a56dbe0a22508">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ad863f31738dfbb14be9cc05a0d525cb8">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a7fa5bdb8c83811e354db2784e5991aa8">autobahn::wamp_websocket_transport</a>
 </li>
 </ul>
 
@@ -195,7 +217,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>field()
-: <a class="el" href="classautobahn_1_1wamp__message.html#a85fb21af7b0c14379b98f11e4798e4b8">autobahn::wamp_message</a>
+: <a class="el" href="classautobahn_1_1wamp__message.html#a9804a6f45c3677cff4413a8c07a37598">autobahn::wamp_message</a>
 </li>
 <li>fields()
 : <a class="el" href="classautobahn_1_1wamp__message.html#a7101933c7dadd25ba5f022854b53d3d8">autobahn::wamp_message</a>
@@ -227,19 +249,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>has_handler()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a1d9dffc838cd2738b61c0a67f1b824cf">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a89dedf7b3cbc23b24118f068cb8098f9">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#acb9dd60d96ec4197823bc522f91cdee8">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a52812a1e18bb9e8b1cbe9672737fcc15">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a8238168035d76da4aaace2ae438cb79f">autobahn::wamp_websocket_transport</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>is_connected()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a36d42728b024747a7af5d42eee125d54">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ad987b3a015db76afa9fb35ecf1ef671d">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a270c3f477bc573f975bbcae8ce2e83d3">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a8570659f32e6a0d35f6a3007c68bcffb">autobahn::wamp_websocket_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocketpp__websocket__transport.html#af32f358e87eaa7831ed127b4b69d2216">autobahn::wamp_websocketpp_websocket_transport&lt; Config &gt;</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#aeedb36dcd8bca268dfc755802591faba">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocketpp__websocket__transport.html#a938b8275a75b4f925ba08966f6c8b109">autobahn::wamp_websocketpp_websocket_transport&lt; Config &gt;</a>
 </li>
 <li>is_field_type()
 : <a class="el" href="classautobahn_1_1wamp__message.html#ac44296cb6a660ff0ee91ee3790e5c952">autobahn::wamp_message</a>
@@ -249,7 +271,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_j"></a>- j -</h3><ul>
 <li>join()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a2c4b665e8827fef73550909eff058d1b">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#aec0bc6ef02837fa3daaba07d9f053368">autobahn::wamp_session</a>
 </li>
 </ul>
 
@@ -275,7 +297,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>leave()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a94bbcb1a469dbb81167e45ac352b7956">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a499c1a7f1e7c3a9da71cc1ec82521dfa">autobahn::wamp_session</a>
 </li>
 </ul>
 
@@ -312,7 +334,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classautobahn_1_1wamp__transport__handler.html#ad931e9199fd0f138db0a21bebeafac96">autobahn::wamp_transport_handler</a>
 </li>
 <li>on_challenge()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a58e81f1587d6be96484328cf000ec2a8">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#ae48991590eed7b9d26b34c6d0a7928a0">autobahn::wamp_session</a>
 </li>
 <li>on_detach()
 : <a class="el" href="classautobahn_1_1wamp__transport__handler.html#aa42e0c0bfdfca5b35d0c249539f8deea">autobahn::wamp_transport_handler</a>
@@ -325,9 +347,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>pause()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ab73a56bb90f91813f2e526c39e95385a">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9bfdec8d0028004c4b4fd6e64df10f7f">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a2cf54e8ebcd39dd9cb5a6bc524d622bf">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#af736957fc4ecb824f7896c2350ea6bfa">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a093019f8a063a95a61c35a929f3f5724">autobahn::wamp_websocket_transport</a>
 </li>
 <li>pause_handler
 : <a class="el" href="classautobahn_1_1wamp__transport.html#a834b28db4d03bdb3ff77a4638cc2867d">autobahn::wamp_transport</a>
@@ -339,10 +361,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classautobahn_1_1wamp__invocation__impl.html#af538aed0130f6b1c53220c3529bb5d07">autobahn::wamp_invocation_impl</a>
 </li>
 <li>provide()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a5264a0ee2c0ee929e596156f7e1db1be">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#af69d02081f611e0e433f1f00263ca693">autobahn::wamp_session</a>
 </li>
 <li>publish()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a762e9b39cbc60812cd72a2e173e57a16">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a7d40d4e66b27abc1459bdd3abc18e0bc">autobahn::wamp_session</a>
 </li>
 </ul>
 
@@ -352,9 +374,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classautobahn_1_1wamp__invocation__impl.html#a0640f5fb84f4b3c8318670c26617a993">autobahn::wamp_invocation_impl</a>
 </li>
 <li>resume()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a2ad17fd30de5381f98b3d684f2a3cfc8">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a1182039f8f8d0649075eb97ab912ad22">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a9af89639ddb25fc7c3922e01193afb40">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ae8f6cadf8423019417b1459da3517e63">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a3074c50b8b8a4b30ed919ffb34db4a98">autobahn::wamp_websocket_transport</a>
 </li>
 <li>resume_handler
 : <a class="el" href="classautobahn_1_1wamp__transport.html#ad36057ec27420793db7d8d658f3f003c">autobahn::wamp_transport</a>
@@ -364,22 +386,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>send_message()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aaf8be5f49ebd2f8d531dd5222ba21bcb">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a50479854025d275eb16c4e2cdcd8ca12">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a75c9f6a2d4dc91974a0ab1bf1b22db6d">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a205c454a5233fbfc860429afc28a9a15">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ac941e567680544f3c829d6f6de7cb999">autobahn::wamp_websocket_transport</a>
 </li>
 <li>set_field()
 : <a class="el" href="classautobahn_1_1wamp__message.html#a16c244c17216a13baf9e59bd74285f64">autobahn::wamp_message</a>
 </li>
 <li>set_pause_handler()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#af83590e2f389835e8b6fef7be8699465">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a7a5dc1e0f1de859864b7905a5317fab1">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#ab85c7c4245d22400e85a69973f882576">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a66158d198e438ba1a8fd883d601631e9">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a94a0e0555dc2929f07f4306d331b2c08">autobahn::wamp_websocket_transport</a>
 </li>
 <li>set_resume_handler()
-: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a94f4f9bf95969cc7a03b7891afbfe741">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
+: <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9659a6451e8fd027a08bfb39b8273b94">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 , <a class="el" href="classautobahn_1_1wamp__transport.html#a96ed112feb74285454180113211ce8af">autobahn::wamp_transport</a>
-, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#aa0cd23fc7bbe8ec32a3b29e0007a648f">autobahn::wamp_websocket_transport</a>
+, <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a0d8ded9c1d996bb5ef5b0a0247ad55cf">autobahn::wamp_websocket_transport</a>
 </li>
 <li>size()
 : <a class="el" href="classautobahn_1_1wamp__message.html#a2076474f6f32eb4bcf24c0cc305dfc49">autobahn::wamp_message</a>
@@ -388,27 +410,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aa11aea0af1d26f4ead1cfb07f877034b">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>
 </li>
 <li>start()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a88d4681d9b40c6d952849b565178b1d2">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a50e587da630e209858a70ae342ee1fec">autobahn::wamp_session</a>
 </li>
 <li>stop()
-: <a class="el" href="classautobahn_1_1wamp__session.html#ab5e6b6a1c9568f3917fd62bac53e2a5f">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a735e96fa6dd856a0ffb03161ff1ca262">autobahn::wamp_session</a>
 </li>
 <li>subscribe()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a146c3f4f084c48c1347c625a407d51cd">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a3979afb4fef6801d9fe12a9c09183b27">autobahn::wamp_session</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>unprovide()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a424faa7b0ae5cb5cc84beaa7ddc37e83">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a029fdfb68ea7a2b31b5aaa6d7cce50d8">autobahn::wamp_session</a>
 </li>
 <li>unsubscribe()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a1e64d52d7592c4bb88d826fb96126e0c">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a3f83202670838318dbec10eb4ec622b5">autobahn::wamp_session</a>
 </li>
 <li>uri()
-: <a class="el" href="classautobahn_1_1wamp__event.html#ac98e6b5eafeb90ff7aa39e8cf9d77b6b">autobahn::wamp_event</a>
-, <a class="el" href="classautobahn_1_1wamp__invocation__impl.html#a64b61c41b41552fcb99340c86acc9f5e">autobahn::wamp_invocation_impl</a>
+: <a class="el" href="classautobahn_1_1wamp__event.html#a56143766b218b526e7197a21b55eb8d8">autobahn::wamp_event</a>
+, <a class="el" href="classautobahn_1_1wamp__invocation__impl.html#af54d8b7be876ae06318e8af927674c4a">autobahn::wamp_invocation_impl</a>
 </li>
 </ul>
 
@@ -427,14 +449,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a4f49ed26ca9614e26709dd3e469c9132">autobahn::wamp_websocket_transport</a>
 </li>
 <li>welcome_details()
-: <a class="el" href="classautobahn_1_1wamp__session.html#a2e7cdf1613be8eef5d5448fcc447b52d">autobahn::wamp_session</a>
+: <a class="el" href="classautobahn_1_1wamp__session.html#a80c666e67c8f82688cb4cf554b4b317b">autobahn::wamp_session</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_z"></a>- z -</h3><ul>
 <li>zone()
-: <a class="el" href="classautobahn_1_1wamp__message.html#a996377d2dc09ec6d3778a1781017eec6">autobahn::wamp_message</a>
+: <a class="el" href="classautobahn_1_1wamp__message.html#ae8db458e6c133012e4caceefb56ff263">autobahn::wamp_message</a>
 </li>
 </ul>
 
@@ -448,17 +470,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

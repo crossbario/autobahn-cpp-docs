@@ -11,6 +11,14 @@
         <title>AutobahnC++: autobahn::wamp_call_result Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__call__result.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -116,9 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a91659e31768ae1f6446875c89bfcde23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91659e31768ae1f6446875c89bfcde23"></a>
 <a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a> &amp;other)=delete</td></tr>
 <tr class="separator:a91659e31768ae1f6446875c89bfcde23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d7054d1b6c9e0d6f263db388984aa9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82d7054d1b6c9e0d6f263db388984aa9"></a>
+<tr class="memitem:adb80a04a0f0b97db0294fe1e489c8eae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb80a04a0f0b97db0294fe1e489c8eae"></a>
 <a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a> &amp;&amp;other)</td></tr>
-<tr class="separator:a82d7054d1b6c9e0d6f263db388984aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:adb80a04a0f0b97db0294fe1e489c8eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e2cde68fa5be6ebc64e50f7cdbcfcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55e2cde68fa5be6ebc64e50f7cdbcfcd"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__call__result.html#a55e2cde68fa5be6ebc64e50f7cdbcfcd">number_of_arguments</a> () const </td></tr>
 <tr class="memdesc:a55e2cde68fa5be6ebc64e50f7cdbcfcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of positional arguments returned from the call. <br /></td></tr>
@@ -174,15 +192,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_arguments</b> (co
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_kw_arguments</b> (const msgpack::object &amp;<a class="el" href="classautobahn_1_1wamp__call__result.html#a904172ee3b56c2a54d487c0d558b73fe">kw_arguments</a>)</td></tr>
 <tr class="separator:a719bbff5d8dc1e2ac2750d651d60692d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="wamp__call__result_8hpp_source.html#l00039">39</a> of file <a class="el" href="wamp__call__result_8hpp_source.html">wamp_call_result.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acd294dba78dc78a987ce1188e8ba5b18"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">T autobahn::wamp_call_result::argument </td>
@@ -192,11 +210,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The positional argument returned from the call with the given <code>index</code>, converted to type T. </p>
@@ -216,9 +229,6 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename List &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">List autobahn::wamp_call_result::arguments </td>
@@ -227,11 +237,6 @@ template&lt;typename List &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The positional arguments returned from the call, converted to a list type. </p>
@@ -250,9 +255,6 @@ template&lt;typename List &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename List &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void autobahn::wamp_call_result::get_arguments </td>
@@ -262,11 +264,6 @@ template&lt;typename List &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Convert and assign the positional arguments returned from the call to the given <code>args</code> list. </p>
@@ -319,9 +316,6 @@ template&lt;typename... T&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Map &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void autobahn::wamp_call_result::get_kw_arguments </td>
@@ -331,11 +325,6 @@ template&lt;typename Map &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Convert and assign the keyword arguments returned from the call to the given <code>kw_args</code> map. </p>
@@ -353,9 +342,6 @@ template&lt;typename Map &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">T autobahn::wamp_call_result::kw_argument </td>
@@ -365,11 +351,6 @@ template&lt;typename T &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The keyword argument returned from the call with the given <code>key</code>, converted to type T. </p>
@@ -391,9 +372,6 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">T autobahn::wamp_call_result::kw_argument_or </td>
@@ -413,11 +391,6 @@ template&lt;typename T &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The keyword argument returned from the call with the given <code>key</code>, converted to type T, or the given <code>fallback</code> if no such key was passed. </p>
@@ -438,9 +411,6 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Map &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Map autobahn::wamp_call_result::kw_arguments </td>
@@ -449,11 +419,6 @@ template&lt;typename Map &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The keyword arguments returned from the call, converted to a map type. </p>
@@ -467,22 +432,25 @@ template&lt;typename Map &gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/<a class="el" href="wamp__call__result_8hpp_source.html">wamp_call_result.hpp</a></li>
-<li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/wamp_call_result.ipp</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a></li>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

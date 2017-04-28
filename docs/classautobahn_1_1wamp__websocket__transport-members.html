@@ -11,6 +11,14 @@
         <title>AutobahnC++: Member List</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__websocket__transport.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">wamp_websocket_transport</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">autobahn::wamp_websocket_transport Member List</div>  </div>
@@ -102,40 +120,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>, including all inherited members.</p>
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>async_connect</b>(const std::string &amp;m_uri, boost::promise&lt; void &gt; &amp;connect_promise)=0 (defined in <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a885832793fc41f7c2e7dc1c459d54c81">attach</a>(const std::shared_ptr&lt; wamp_transport_handler &gt; &amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a50e5ef694980acdf33df523f7d764e52">attach</a>(const std::shared_ptr&lt; wamp_transport_handler &gt; &amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>close</b>()=0 (defined in <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#abb6a4d27aca48ef36466b7281f8d2acd">connect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a6218f9e9c78ef1d4148048fd681728fe">detach</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ad863f31738dfbb14be9cc05a0d525cb8">disconnect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a52812a1e18bb9e8b1cbe9672737fcc15">has_handler</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a8570659f32e6a0d35f6a3007c68bcffb">is_connected</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ac7415c55676df83dd76dd96a6bc35628">connect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a99dfe543cd8d71e50433c9c655ddedbd">detach</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a7fa5bdb8c83811e354db2784e5991aa8">disconnect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a8238168035d76da4aaace2ae438cb79f">has_handler</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#aeedb36dcd8bca268dfc755802591faba">is_connected</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>is_open</b>() const =0 (defined in <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a40a623b481a8673a709ffe972300e4de">m_connect</a></td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ada35715a46031549fac055cc1f77d9d8">m_disconnect</a></td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#af736957fc4ecb824f7896c2350ea6bfa">pause</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a093019f8a063a95a61c35a929f3f5724">pause</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html#a834b28db4d03bdb3ff77a4638cc2867d">pause_handler</a> typedef</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html">autobahn::wamp_transport</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>receive_message</b>(const std::string &amp;msg) (defined in <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ae8f6cadf8423019417b1459da3517e63">resume</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>receive_message</b>(const std::string &amp;msg) (defined in <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a3074c50b8b8a4b30ed919ffb34db4a98">resume</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html#ad36057ec27420793db7d8d658f3f003c">resume_handler</a> typedef</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html">autobahn::wamp_transport</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a205c454a5233fbfc860429afc28a9a15">send_message</a>(wamp_message &amp;&amp;message) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a66158d198e438ba1a8fd883d601631e9">set_pause_handler</a>(pause_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#aa0cd23fc7bbe8ec32a3b29e0007a648f">set_resume_handler</a>(resume_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a4f49ed26ca9614e26709dd3e469c9132">wamp_websocket_transport</a>(const std::string &amp;uri, bool debug_enabled=false)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#ac941e567680544f3c829d6f6de7cb999">send_message</a>(wamp_message &amp;&amp;message) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a94a0e0555dc2929f07f4306d331b2c08">set_pause_handler</a>(pause_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a0d8ded9c1d996bb5ef5b0a0247ad55cf">set_resume_handler</a>(resume_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html#a4f49ed26ca9614e26709dd3e469c9132">wamp_websocket_transport</a>(const std::string &amp;uri, bool debug_enabled=false)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>write</b>(void const *payload, size_t len)=0 (defined in <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html#a79205fa2b20ea4fa9a99448cc019085d">~wamp_transport</a>()=default</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html">autobahn::wamp_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~wamp_websocket_transport</b>() override=default (defined in <a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__websocket__transport.html">autobahn::wamp_websocket_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

@@ -1,0 +1,248 @@
+\hypertarget{classautobahn_1_1wamp__event}{}\section{autobahn\+:\+:wamp\+\_\+event Class Reference}
+\label{classautobahn_1_1wamp__event}\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries wamp\+\_\+event} (msgpack\+::zone \&\&zone)\hypertarget{classautobahn_1_1wamp__event_ab439d4d7276111e2db2c211a32013589}{}\label{classautobahn_1_1wamp__event_ab439d4d7276111e2db2c211a32013589}
+
+\item 
+const std\+::string \& \hyperlink{classautobahn_1_1wamp__event_a56143766b218b526e7197a21b55eb8d8}{uri} () const 
+\begin{DoxyCompactList}\small\item\em Event U\+RI. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classautobahn_1_1wamp__event_a3f641a0b0c1c4587837e89628cc51120}{number\+\_\+of\+\_\+arguments} () const \hypertarget{classautobahn_1_1wamp__event_a3f641a0b0c1c4587837e89628cc51120}{}\label{classautobahn_1_1wamp__event_a3f641a0b0c1c4587837e89628cc51120}
+
+\begin{DoxyCompactList}\small\item\em The number of positional arguments published by the event. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classautobahn_1_1wamp__event_a9cbafb7d1e34c12883e724936e2fcce9}{number\+\_\+of\+\_\+kw\+\_\+arguments} () const \hypertarget{classautobahn_1_1wamp__event_a9cbafb7d1e34c12883e724936e2fcce9}{}\label{classautobahn_1_1wamp__event_a9cbafb7d1e34c12883e724936e2fcce9}
+
+\begin{DoxyCompactList}\small\item\em The number of keyword arguments published by the event. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classautobahn_1_1wamp__event_a63c48db45124c46c082992cdb0c53300}{argument} (std\+::size\+\_\+t index) const 
+\begin{DoxyCompactList}\small\item\em The positional argument published by the event with the given {\ttfamily index}, converted to type T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List $>$ }\\List \hyperlink{classautobahn_1_1wamp__event_add17b7623ab85ad698a333c5cfc0a554}{arguments} () const 
+\begin{DoxyCompactList}\small\item\em The positional arguments published by the event, converted to a list type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List $>$ }\\void \hyperlink{classautobahn_1_1wamp__event_a8d798d713e87e65a1d675ff729d20a76}{get\+\_\+arguments} (List \&args) const 
+\begin{DoxyCompactList}\small\item\em Convert and assign the positional arguments published by the event to the given {\ttfamily args} list. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... T$>$ }\\void \hyperlink{classautobahn_1_1wamp__event_af3012ae4372214da75a5194874cd1738}{get\+\_\+each\+\_\+argument} (T \&...args) const 
+\begin{DoxyCompactList}\small\item\em Convert and assign the positional arguments to a given list of individual parameters. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classautobahn_1_1wamp__event_a020e8ff3c02efe28c1aef202b367feae}{kw\+\_\+argument} (const std\+::string \&key) const 
+\begin{DoxyCompactList}\small\item\em The keyword argument published by the event with the given {\ttfamily key}, converted to type T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries kw\+\_\+argument} (const char $\ast$key) const \hypertarget{classautobahn_1_1wamp__event_a5eb40b018d2f497f97609f730f770ff1}{}\label{classautobahn_1_1wamp__event_a5eb40b018d2f497f97609f730f770ff1}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{classautobahn_1_1wamp__event_aee963b0b4f1ee0a648bd32a9d808859e}{kw\+\_\+argument\+\_\+or} (const std\+::string \&key, const T \&fallback) const 
+\begin{DoxyCompactList}\small\item\em The keyword argument published by the event with the given {\ttfamily key}, converted to type T, or the given {\ttfamily fallback} if no such key was passed. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries kw\+\_\+argument\+\_\+or} (const char $\ast$key, const T \&fallback) const \hypertarget{classautobahn_1_1wamp__event_a6f41d93d8ca0690dcc2820fb1bc23ed1}{}\label{classautobahn_1_1wamp__event_a6f41d93d8ca0690dcc2820fb1bc23ed1}
+
+\item 
+{\footnotesize template$<$typename Map $>$ }\\Map \hyperlink{classautobahn_1_1wamp__event_a731697bd7b1f20bf59482963341805f7}{kw\+\_\+arguments} () const 
+\begin{DoxyCompactList}\small\item\em The keyword arguments published by the event, converted to a map type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Map $>$ }\\void \hyperlink{classautobahn_1_1wamp__event_a179515512370e78effe89d55d3206581}{get\+\_\+kw\+\_\+arguments} (Map \&kw\+\_\+args) const 
+\begin{DoxyCompactList}\small\item\em Convert and assign the keyword arguments published by the event to the given {\ttfamily kw\+\_\+args} map. \end{DoxyCompactList}\item 
+void {\bfseries set\+\_\+arguments} (const msgpack\+::object \&\hyperlink{classautobahn_1_1wamp__event_add17b7623ab85ad698a333c5cfc0a554}{arguments})\hypertarget{classautobahn_1_1wamp__event_a40cd9656c3643794e115b577f61b8b95}{}\label{classautobahn_1_1wamp__event_a40cd9656c3643794e115b577f61b8b95}
+
+\item 
+void {\bfseries set\+\_\+kw\+\_\+arguments} (const msgpack\+::object \&\hyperlink{classautobahn_1_1wamp__event_a731697bd7b1f20bf59482963341805f7}{kw\+\_\+arguments})\hypertarget{classautobahn_1_1wamp__event_a1b9749ea58b11bfba5926fcc7306557c}{}\label{classautobahn_1_1wamp__event_a1b9749ea58b11bfba5926fcc7306557c}
+
+\item 
+void {\bfseries set\+\_\+details} (const msgpack\+::object \&details)\hypertarget{classautobahn_1_1wamp__event_ac44639c43e35211bb45e1e1477884e1c}{}\label{classautobahn_1_1wamp__event_ac44639c43e35211bb45e1e1477884e1c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 42 of file wamp\+\_\+event.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!argument@{argument}}
+\index{argument@{argument}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{argument(std\+::size\+\_\+t index) const }{argument(std::size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T autobahn\+::wamp\+\_\+event\+::argument (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_a63c48db45124c46c082992cdb0c53300}{}\label{classautobahn_1_1wamp__event_a63c48db45124c46c082992cdb0c53300}
+
+
+The positional argument published by the event with the given {\ttfamily index}, converted to type T. 
+
+Example\+: {\ttfamily std\+::string id = event.\+argument$<$std\+::string$>$(0); // first positional argument}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & \\
+\hline
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!arguments@{arguments}}
+\index{arguments@{arguments}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{arguments() const }{arguments() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List $>$ List autobahn\+::wamp\+\_\+event\+::arguments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_add17b7623ab85ad698a333c5cfc0a554}{}\label{classautobahn_1_1wamp__event_add17b7623ab85ad698a333c5cfc0a554}
+
+
+The positional arguments published by the event, converted to a list type. 
+
+Example\+: {\ttfamily auto args = event.\+arguments$<$std\+::tuple$<$std\+::string$>$$>$();}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!get\+\_\+arguments@{get\+\_\+arguments}}
+\index{get\+\_\+arguments@{get\+\_\+arguments}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{get\+\_\+arguments(\+List \&args) const }{get_arguments(List &args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List $>$ void autobahn\+::wamp\+\_\+event\+::get\+\_\+arguments (
+\begin{DoxyParamCaption}
+\item[{List \&}]{args}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_a8d798d713e87e65a1d675ff729d20a76}{}\label{classautobahn_1_1wamp__event_a8d798d713e87e65a1d675ff729d20a76}
+
+
+Convert and assign the positional arguments published by the event to the given {\ttfamily args} list. 
+
+Example\+: 
+\begin{DoxyCode}
+std::tuple<std::string> args;
+\textcolor{keyword}{event}.get\_arguments(args);
+\end{DoxyCode}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!get\+\_\+each\+\_\+argument@{get\+\_\+each\+\_\+argument}}
+\index{get\+\_\+each\+\_\+argument@{get\+\_\+each\+\_\+argument}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{get\+\_\+each\+\_\+argument(\+T \&...\+args) const }{get_each_argument(T &...args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... T$>$ void autobahn\+::wamp\+\_\+event\+::get\+\_\+each\+\_\+argument (
+\begin{DoxyParamCaption}
+\item[{T \&...}]{args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classautobahn_1_1wamp__event_af3012ae4372214da75a5194874cd1738}{}\label{classautobahn_1_1wamp__event_af3012ae4372214da75a5194874cd1738}
+
+
+Convert and assign the positional arguments to a given list of individual parameters. 
+
+Enables a syntax that lets you declare variables individually, but list them in a single space to empathize parameter order. This will also throw if the number of arguments to the invocation doesn\textquotesingle{}t match the number of given parameters.
+
+Example\+: 
+\begin{DoxyCode}
+uint64\_t id;
+std::string name;
+invocation->get\_each\_argument(\textcolor{keywordtype}{id}, name);
+\end{DoxyCode}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!get\+\_\+kw\+\_\+arguments@{get\+\_\+kw\+\_\+arguments}}
+\index{get\+\_\+kw\+\_\+arguments@{get\+\_\+kw\+\_\+arguments}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{get\+\_\+kw\+\_\+arguments(\+Map \&kw\+\_\+args) const }{get_kw_arguments(Map &kw_args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Map $>$ void autobahn\+::wamp\+\_\+event\+::get\+\_\+kw\+\_\+arguments (
+\begin{DoxyParamCaption}
+\item[{Map \&}]{kw\+\_\+args}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_a179515512370e78effe89d55d3206581}{}\label{classautobahn_1_1wamp__event_a179515512370e78effe89d55d3206581}
+
+
+Convert and assign the keyword arguments published by the event to the given {\ttfamily kw\+\_\+args} map. 
+
+Example\+: 
+\begin{DoxyCode}
+std::unordered\_map<std::string, msgpack::object> kw\_args;
+\textcolor{keyword}{event}.get\_kw\_arguments(kw\_args);
+\end{DoxyCode}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!kw\+\_\+argument@{kw\+\_\+argument}}
+\index{kw\+\_\+argument@{kw\+\_\+argument}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{kw\+\_\+argument(const std\+::string \&key) const }{kw_argument(const std::string &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T autobahn\+::wamp\+\_\+event\+::kw\+\_\+argument (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_a020e8ff3c02efe28c1aef202b367feae}{}\label{classautobahn_1_1wamp__event_a020e8ff3c02efe28c1aef202b367feae}
+
+
+The keyword argument published by the event with the given {\ttfamily key}, converted to type T. 
+
+Overloads are provided for {\ttfamily std\+::string} and {\ttfamily char$\ast$} as {\ttfamily key} type.
+
+This function uses key string comparisons to find the matching value, O(n) with n being the number of map elements. Memory allocation for keys is avoided though. For larger maps, you might want to prioritize look-\/up performance by using {\ttfamily std\+::map}, {\ttfamily std\+::unordered\+\_\+map} or custom types with custom deserialization. To do this, use \hyperlink{classautobahn_1_1wamp__event_a731697bd7b1f20bf59482963341805f7}{kw\+\_\+arguments$<$\+Map$>$()} or get\+\_\+kw\+\_\+arguments$<$\+Map$>$(map), then access the items from there.
+
+Example\+: {\ttfamily std\+::string id = event.\+kw\+\_\+argument$<$std\+::string$>$(\char`\"{}id\char`\"{});}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & \\
+\hline
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!kw\+\_\+argument\+\_\+or@{kw\+\_\+argument\+\_\+or}}
+\index{kw\+\_\+argument\+\_\+or@{kw\+\_\+argument\+\_\+or}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{kw\+\_\+argument\+\_\+or(const std\+::string \&key, const T \&fallback) const }{kw_argument_or(const std::string &key, const T &fallback) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T autobahn\+::wamp\+\_\+event\+::kw\+\_\+argument\+\_\+or (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{const T \&}]{fallback}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_aee963b0b4f1ee0a648bd32a9d808859e}{}\label{classautobahn_1_1wamp__event_aee963b0b4f1ee0a648bd32a9d808859e}
+
+
+The keyword argument published by the event with the given {\ttfamily key}, converted to type T, or the given {\ttfamily fallback} if no such key was passed. 
+
+Overloads are provided for {\ttfamily std\+::string} and {\ttfamily char$\ast$} as {\ttfamily key} type.
+
+This function uses key string comparisons to find the matching value, O(n) with n being the number of map elements. Memory allocation for keys is avoided though. For larger maps, you might want to prioritize look-\/up performance by using {\ttfamily std\+::map}, {\ttfamily std\+::unordered\+\_\+map} or custom types with custom deserialization. To do this, use \hyperlink{classautobahn_1_1wamp__event_a731697bd7b1f20bf59482963341805f7}{kw\+\_\+arguments$<$\+Map$>$()} or get\+\_\+kw\+\_\+arguments$<$\+Map$>$(map), then access the items from there.
+
+Example\+: {\ttfamily std\+::string id = event.\+kw\+\_\+argument\+\_\+or(\char`\"{}id\char`\"{}, std\+::string());}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!kw\+\_\+arguments@{kw\+\_\+arguments}}
+\index{kw\+\_\+arguments@{kw\+\_\+arguments}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{kw\+\_\+arguments() const }{kw_arguments() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Map $>$ Map autobahn\+::wamp\+\_\+event\+::kw\+\_\+arguments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_a731697bd7b1f20bf59482963341805f7}{}\label{classautobahn_1_1wamp__event_a731697bd7b1f20bf59482963341805f7}
+
+
+The keyword arguments published by the event, converted to a map type. 
+
+Example\+: {\ttfamily auto kw\+\_\+args = event.\+kw\+\_\+arguments$<$std\+::unordered\+\_\+map$<$std\+::string, msgpack\+::object$>$$>$();}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+cast} & \\
+\hline
+\end{DoxyExceptions}
+\index{autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}!uri@{uri}}
+\index{uri@{uri}!autobahn\+::wamp\+\_\+event@{autobahn\+::wamp\+\_\+event}}
+\subsubsection[{\texorpdfstring{uri() const }{uri() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& autobahn\+::wamp\+\_\+event\+::uri (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__event_a56143766b218b526e7197a21b55eb8d8}{}\label{classautobahn_1_1wamp__event_a56143766b218b526e7197a21b55eb8d8}
+
+
+Event U\+RI. 
+
+Used by prefix \& wildcard subscriptions 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oberstet/scm/crossbario/autobahn-\/cpp/autobahn/wamp\+\_\+event.\+hpp\end{DoxyCompactItemize}

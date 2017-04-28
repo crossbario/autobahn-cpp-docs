@@ -11,6 +11,14 @@
         <title>AutobahnC++: autobahn::wamp_rawsocket_transport&lt; Socket &gt; Class Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__rawsocket__transport.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">wamp_rawsocket_transport</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -143,39 +161,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a304576feebe5400ac00acb9deb330318"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a304576feebe5400ac00acb9deb330318">wamp_rawsocket_transport</a> (boost::asio::io_service &amp;io_service, const <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ae262d9ecdd93daae0e44b5b557bf24e8">endpoint_type</a> &amp;remote_endpoint, bool debug_enabled=false)</td></tr>
 <tr class="memdesc:a304576feebe5400ac00acb9deb330318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a rawsocket transport.  <a href="#a304576feebe5400ac00acb9deb330318">More...</a><br /></td></tr>
 <tr class="separator:a304576feebe5400ac00acb9deb330318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea1864d6174cbcc7d7181f20c1222afe"><td class="memItemLeft" align="right" valign="top">virtual boost::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aea1864d6174cbcc7d7181f20c1222afe">connect</a> () override</td></tr>
-<tr class="memdesc:aea1864d6174cbcc7d7181f20c1222afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to connect the transport.  <a href="#aea1864d6174cbcc7d7181f20c1222afe">More...</a><br /></td></tr>
-<tr class="separator:aea1864d6174cbcc7d7181f20c1222afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07891c8d9d112615de639e4e3bc1aa20"><td class="memItemLeft" align="right" valign="top">virtual boost::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a07891c8d9d112615de639e4e3bc1aa20">disconnect</a> () override</td></tr>
-<tr class="memdesc:a07891c8d9d112615de639e4e3bc1aa20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to disconnect the transport.  <a href="#a07891c8d9d112615de639e4e3bc1aa20">More...</a><br /></td></tr>
-<tr class="separator:a07891c8d9d112615de639e4e3bc1aa20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d42728b024747a7af5d42eee125d54"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a36d42728b024747a7af5d42eee125d54">is_connected</a> () const override</td></tr>
-<tr class="memdesc:a36d42728b024747a7af5d42eee125d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the transport is connected.  <a href="#a36d42728b024747a7af5d42eee125d54">More...</a><br /></td></tr>
-<tr class="separator:a36d42728b024747a7af5d42eee125d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf8be5f49ebd2f8d531dd5222ba21bcb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aaf8be5f49ebd2f8d531dd5222ba21bcb">send_message</a> (<a class="el" href="classautobahn_1_1wamp__message.html">wamp_message</a> &amp;&amp;message) override</td></tr>
-<tr class="memdesc:aaf8be5f49ebd2f8d531dd5222ba21bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the message synchronously over the transport.  <a href="#aaf8be5f49ebd2f8d531dd5222ba21bcb">More...</a><br /></td></tr>
-<tr class="separator:aaf8be5f49ebd2f8d531dd5222ba21bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af83590e2f389835e8b6fef7be8699465"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#af83590e2f389835e8b6fef7be8699465">set_pause_handler</a> (<a class="el" href="classautobahn_1_1wamp__transport.html#a834b28db4d03bdb3ff77a4638cc2867d">pause_handler</a> &amp;&amp;handler) override</td></tr>
-<tr class="memdesc:af83590e2f389835e8b6fef7be8699465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the handler to be invoked when the transport detects congestion sending to the remote peer and needs to apply backpressure on the application.  <a href="#af83590e2f389835e8b6fef7be8699465">More...</a><br /></td></tr>
-<tr class="separator:af83590e2f389835e8b6fef7be8699465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f4f9bf95969cc7a03b7891afbfe741"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a94f4f9bf95969cc7a03b7891afbfe741">set_resume_handler</a> (<a class="el" href="classautobahn_1_1wamp__transport.html#ad36057ec27420793db7d8d658f3f003c">resume_handler</a> &amp;&amp;handler) override</td></tr>
-<tr class="memdesc:a94f4f9bf95969cc7a03b7891afbfe741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the handler to be invoked when the transport detects congestion has subsided on the remote peer and the application can resume sending messages.  <a href="#a94f4f9bf95969cc7a03b7891afbfe741">More...</a><br /></td></tr>
-<tr class="separator:a94f4f9bf95969cc7a03b7891afbfe741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab73a56bb90f91813f2e526c39e95385a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ab73a56bb90f91813f2e526c39e95385a">pause</a> () override</td></tr>
-<tr class="memdesc:ab73a56bb90f91813f2e526c39e95385a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause receiving of messages.  <a href="#ab73a56bb90f91813f2e526c39e95385a">More...</a><br /></td></tr>
-<tr class="separator:ab73a56bb90f91813f2e526c39e95385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad17fd30de5381f98b3d684f2a3cfc8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a2ad17fd30de5381f98b3d684f2a3cfc8">resume</a> () override</td></tr>
-<tr class="memdesc:a2ad17fd30de5381f98b3d684f2a3cfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume receiving of messages.  <a href="#a2ad17fd30de5381f98b3d684f2a3cfc8">More...</a><br /></td></tr>
-<tr class="separator:a2ad17fd30de5381f98b3d684f2a3cfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a385ffc9f98571a46dbbe9a6b33da53ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a385ffc9f98571a46dbbe9a6b33da53ff">attach</a> (const std::shared_ptr&lt; <a class="el" href="classautobahn_1_1wamp__transport__handler.html">wamp_transport_handler</a> &gt; &amp;handler) override</td></tr>
-<tr class="memdesc:a385ffc9f98571a46dbbe9a6b33da53ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a handler to the transport.  <a href="#a385ffc9f98571a46dbbe9a6b33da53ff">More...</a><br /></td></tr>
-<tr class="separator:a385ffc9f98571a46dbbe9a6b33da53ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac62d74fde35098e8a830a09cede6ac6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aac62d74fde35098e8a830a09cede6ac6">detach</a> () override</td></tr>
-<tr class="memdesc:aac62d74fde35098e8a830a09cede6ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the handler currently attached to the transport.  <a href="#aac62d74fde35098e8a830a09cede6ac6">More...</a><br /></td></tr>
-<tr class="separator:aac62d74fde35098e8a830a09cede6ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9dffc838cd2738b61c0a67f1b824cf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a1d9dffc838cd2738b61c0a67f1b824cf">has_handler</a> () const override</td></tr>
-<tr class="memdesc:a1d9dffc838cd2738b61c0a67f1b824cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the transport has a handler attached.  <a href="#a1d9dffc838cd2738b61c0a67f1b824cf">More...</a><br /></td></tr>
-<tr class="separator:a1d9dffc838cd2738b61c0a67f1b824cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2555c344ee08add2598e8aa90d809a9e"><td class="memItemLeft" align="right" valign="top">virtual boost::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a2555c344ee08add2598e8aa90d809a9e">connect</a> () override</td></tr>
+<tr class="memdesc:a2555c344ee08add2598e8aa90d809a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to connect the transport.  <a href="#a2555c344ee08add2598e8aa90d809a9e">More...</a><br /></td></tr>
+<tr class="separator:a2555c344ee08add2598e8aa90d809a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae409074a0b522e3b1db87e417117bc"><td class="memItemLeft" align="right" valign="top">virtual boost::future&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a7ae409074a0b522e3b1db87e417117bc">disconnect</a> () override</td></tr>
+<tr class="memdesc:a7ae409074a0b522e3b1db87e417117bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to disconnect the transport.  <a href="#a7ae409074a0b522e3b1db87e417117bc">More...</a><br /></td></tr>
+<tr class="separator:a7ae409074a0b522e3b1db87e417117bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad987b3a015db76afa9fb35ecf1ef671d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ad987b3a015db76afa9fb35ecf1ef671d">is_connected</a> () const override</td></tr>
+<tr class="memdesc:ad987b3a015db76afa9fb35ecf1ef671d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the transport is connected.  <a href="#ad987b3a015db76afa9fb35ecf1ef671d">More...</a><br /></td></tr>
+<tr class="separator:ad987b3a015db76afa9fb35ecf1ef671d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50479854025d275eb16c4e2cdcd8ca12"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a50479854025d275eb16c4e2cdcd8ca12">send_message</a> (<a class="el" href="classautobahn_1_1wamp__message.html">wamp_message</a> &amp;&amp;message) override</td></tr>
+<tr class="memdesc:a50479854025d275eb16c4e2cdcd8ca12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the message synchronously over the transport.  <a href="#a50479854025d275eb16c4e2cdcd8ca12">More...</a><br /></td></tr>
+<tr class="separator:a50479854025d275eb16c4e2cdcd8ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5dc1e0f1de859864b7905a5317fab1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a7a5dc1e0f1de859864b7905a5317fab1">set_pause_handler</a> (<a class="el" href="classautobahn_1_1wamp__transport.html#a834b28db4d03bdb3ff77a4638cc2867d">pause_handler</a> &amp;&amp;handler) override</td></tr>
+<tr class="memdesc:a7a5dc1e0f1de859864b7905a5317fab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the handler to be invoked when the transport detects congestion sending to the remote peer and needs to apply backpressure on the application.  <a href="#a7a5dc1e0f1de859864b7905a5317fab1">More...</a><br /></td></tr>
+<tr class="separator:a7a5dc1e0f1de859864b7905a5317fab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9659a6451e8fd027a08bfb39b8273b94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9659a6451e8fd027a08bfb39b8273b94">set_resume_handler</a> (<a class="el" href="classautobahn_1_1wamp__transport.html#ad36057ec27420793db7d8d658f3f003c">resume_handler</a> &amp;&amp;handler) override</td></tr>
+<tr class="memdesc:a9659a6451e8fd027a08bfb39b8273b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the handler to be invoked when the transport detects congestion has subsided on the remote peer and the application can resume sending messages.  <a href="#a9659a6451e8fd027a08bfb39b8273b94">More...</a><br /></td></tr>
+<tr class="separator:a9659a6451e8fd027a08bfb39b8273b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bfdec8d0028004c4b4fd6e64df10f7f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9bfdec8d0028004c4b4fd6e64df10f7f">pause</a> () override</td></tr>
+<tr class="memdesc:a9bfdec8d0028004c4b4fd6e64df10f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause receiving of messages.  <a href="#a9bfdec8d0028004c4b4fd6e64df10f7f">More...</a><br /></td></tr>
+<tr class="separator:a9bfdec8d0028004c4b4fd6e64df10f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1182039f8f8d0649075eb97ab912ad22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a1182039f8f8d0649075eb97ab912ad22">resume</a> () override</td></tr>
+<tr class="memdesc:a1182039f8f8d0649075eb97ab912ad22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume receiving of messages.  <a href="#a1182039f8f8d0649075eb97ab912ad22">More...</a><br /></td></tr>
+<tr class="separator:a1182039f8f8d0649075eb97ab912ad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54bb783139b338d587347f1ed865b94c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a54bb783139b338d587347f1ed865b94c">attach</a> (const std::shared_ptr&lt; <a class="el" href="classautobahn_1_1wamp__transport__handler.html">wamp_transport_handler</a> &gt; &amp;handler) override</td></tr>
+<tr class="memdesc:a54bb783139b338d587347f1ed865b94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a handler to the transport.  <a href="#a54bb783139b338d587347f1ed865b94c">More...</a><br /></td></tr>
+<tr class="separator:a54bb783139b338d587347f1ed865b94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9622ba671182807e0f8e9abce9bb6ab9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9622ba671182807e0f8e9abce9bb6ab9">detach</a> () override</td></tr>
+<tr class="memdesc:a9622ba671182807e0f8e9abce9bb6ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the handler currently attached to the transport.  <a href="#a9622ba671182807e0f8e9abce9bb6ab9">More...</a><br /></td></tr>
+<tr class="separator:a9622ba671182807e0f8e9abce9bb6ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dedf7b3cbc23b24118f068cb8098f9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a89dedf7b3cbc23b24118f068cb8098f9">has_handler</a> () const override</td></tr>
+<tr class="memdesc:a89dedf7b3cbc23b24118f068cb8098f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the transport has a handler attached.  <a href="#a89dedf7b3cbc23b24118f068cb8098f9">More...</a><br /></td></tr>
+<tr class="separator:a89dedf7b3cbc23b24118f068cb8098f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classautobahn_1_1wamp__transport"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classautobahn_1_1wamp__transport')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classautobahn_1_1wamp__transport.html">autobahn::wamp_transport</a></td></tr>
 <tr class="memitem:a79205fa2b20ea4fa9a99448cc019085d inherit pub_methods_classautobahn_1_1wamp__transport"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79205fa2b20ea4fa9a99448cc019085d"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautobahn_1_1wamp__transport.html#a79205fa2b20ea4fa9a99448cc019085d">~wamp_transport</a> ()=default</td></tr>
@@ -184,9 +202,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a403857952c31958ed9667af4c433346a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a403857952c31958ed9667af4c433346a"></a>
+<tr class="memitem:ab7e6b19e8b8d24b79e126a10f616c83c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7e6b19e8b8d24b79e126a10f616c83c"></a>
 <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aa11aea0af1d26f4ead1cfb07f877034b">socket_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> ()</td></tr>
-<tr class="separator:a403857952c31958ed9667af4c433346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab7e6b19e8b8d24b79e126a10f616c83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Socket&gt;<br />
@@ -201,12 +219,14 @@ class autobahn::wamp_rawsocket_transport&lt; Socket &gt;</h3>
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="wamp__rawsocket__transport_8hpp_source.html#l00055">55</a> of file <a class="el" href="wamp__rawsocket__transport_8hpp_source.html">wamp_rawsocket_transport.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a304576feebe5400ac00acb9deb330318"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::<a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">wamp_rawsocket_transport</a> </td>
@@ -246,17 +266,17 @@ template&lt;class Socket &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a385ffc9f98571a46dbbe9a6b33da53ff"></a>
+<a class="anchor" id="a54bb783139b338d587347f1ed865b94c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::attach </td>
+          <td class="memname">virtual void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::attach </td>
           <td>(</td>
           <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classautobahn_1_1wamp__transport__handler.html">wamp_transport_handler</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>
@@ -283,17 +303,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aea1864d6174cbcc7d7181f20c1222afe"></a>
+<a class="anchor" id="a2555c344ee08add2598e8aa90d809a9e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::future&lt; void &gt; <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::connect </td>
+          <td class="memname">virtual boost::future&lt;void&gt; <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::connect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -311,21 +331,21 @@ template&lt;class Socket &gt; </div>
 
 <p>Implements <a class="el" href="classautobahn_1_1wamp__transport.html#a4ea198cfb1e76bb0b1916029a2b66585">autobahn::wamp_transport</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classautobahn_1_1wamp__tcp__transport.html#a02ea0ee9dfd4a944ee45f699537236b4">autobahn::wamp_tcp_transport</a>.</p>
+<p>Reimplemented in <a class="el" href="classautobahn_1_1wamp__tcp__transport.html#af2dbaa2cbc0d144e15995061c01a8ce1">autobahn::wamp_tcp_transport</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aac62d74fde35098e8a830a09cede6ac6"></a>
+<a class="anchor" id="a9622ba671182807e0f8e9abce9bb6ab9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::detach </td>
+          <td class="memname">virtual void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::detach </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -344,17 +364,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a07891c8d9d112615de639e4e3bc1aa20"></a>
+<a class="anchor" id="a7ae409074a0b522e3b1db87e417117bc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boost::future&lt; void &gt; <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::disconnect </td>
+          <td class="memname">virtual boost::future&lt;void&gt; <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::disconnect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -374,17 +394,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1d9dffc838cd2738b61c0a67f1b824cf"></a>
+<a class="anchor" id="a89dedf7b3cbc23b24118f068cb8098f9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::has_handler </td>
+          <td class="memname">virtual bool <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::has_handler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -404,17 +424,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a36d42728b024747a7af5d42eee125d54"></a>
+<a class="anchor" id="ad987b3a015db76afa9fb35ecf1ef671d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::is_connected </td>
+          <td class="memname">virtual bool <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::is_connected </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -434,17 +454,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab73a56bb90f91813f2e526c39e95385a"></a>
+<a class="anchor" id="a9bfdec8d0028004c4b4fd6e64df10f7f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::pause </td>
+          <td class="memname">virtual void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::pause </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -464,17 +484,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2ad17fd30de5381f98b3d684f2a3cfc8"></a>
+<a class="anchor" id="a1182039f8f8d0649075eb97ab912ad22"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::resume </td>
+          <td class="memname">virtual void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::resume </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -494,17 +514,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aaf8be5f49ebd2f8d531dd5222ba21bcb"></a>
+<a class="anchor" id="a50479854025d275eb16c4e2cdcd8ca12"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::send_message </td>
+          <td class="memname">virtual void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::send_message </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classautobahn_1_1wamp__message.html">wamp_message</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
@@ -530,17 +550,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af83590e2f389835e8b6fef7be8699465"></a>
+<a class="anchor" id="a7a5dc1e0f1de859864b7905a5317fab1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::set_pause_handler </td>
+          <td class="memname">virtual void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::set_pause_handler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classautobahn_1_1wamp__transport.html#a834b28db4d03bdb3ff77a4638cc2867d">pause_handler</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>
@@ -566,17 +586,17 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a94f4f9bf95969cc7a03b7891afbfe741"></a>
+<a class="anchor" id="a9659a6451e8fd027a08bfb39b8273b94"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Socket &gt; </div>
+template&lt;typename Socket&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::set_resume_handler </td>
+          <td class="memname">virtual void <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport</a>&lt; Socket &gt;::set_resume_handler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classautobahn_1_1wamp__transport.html#ad36057ec27420793db7d8d658f3f003c">resume_handler</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>
@@ -602,22 +622,25 @@ template&lt;class Socket &gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/<a class="el" href="wamp__rawsocket__transport_8hpp_source.html">wamp_rawsocket_transport.hpp</a></li>
-<li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/wamp_rawsocket_transport.ipp</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">wamp_rawsocket_transport</a></li>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

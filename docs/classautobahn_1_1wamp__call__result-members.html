@@ -11,6 +11,14 @@
         <title>AutobahnC++: Member List</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__call__result.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">autobahn::wamp_call_result Member List</div>  </div>
@@ -101,38 +119,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#acd294dba78dc78a987ce1188e8ba5b18">argument</a>(std::size_t index) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#ae2ea76118fe4ee083b0f482e4b7f6488">arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#aa14b7c3437631416ceb729fb2b1ffc5b">get_arguments</a>(List &amp;args) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#acd294dba78dc78a987ce1188e8ba5b18">argument</a>(std::size_t index) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#ae2ea76118fe4ee083b0f482e4b7f6488">arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#aa14b7c3437631416ceb729fb2b1ffc5b">get_arguments</a>(List &amp;args) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#a295604404ea2ed113f65c0ea8343da97">get_each_argument</a>(T &amp;...args) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#af61e22fc49e755c16ee3bd623506f7ce">get_kw_arguments</a>(Map &amp;kw_args) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#adc18192ecd1f80e8f58059cf4478a2a1">kw_argument</a>(const std::string &amp;key) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>kw_argument</b>(const char *key) const  (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#acd8566b69021382c444edaffdeb7aeb5">kw_argument_or</a>(const std::string &amp;key, const T &amp;fallback) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>kw_argument_or</b>(const char *key, const T &amp;fallback) const  (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#a904172ee3b56c2a54d487c0d558b73fe">kw_arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#a55e2cde68fa5be6ebc64e50f7cdbcfcd">number_of_arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#a9c49cbbb4e66eb25158dff307012c4cc">number_of_kw_arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#af61e22fc49e755c16ee3bd623506f7ce">get_kw_arguments</a>(Map &amp;kw_args) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#adc18192ecd1f80e8f58059cf4478a2a1">kw_argument</a>(const std::string &amp;key) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>kw_argument</b>(const char *key) const  (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#acd8566b69021382c444edaffdeb7aeb5">kw_argument_or</a>(const std::string &amp;key, const T &amp;fallback) const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>kw_argument_or</b>(const char *key, const T &amp;fallback) const  (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#a904172ee3b56c2a54d487c0d558b73fe">kw_arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#a55e2cde68fa5be6ebc64e50f7cdbcfcd">number_of_arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html#a9c49cbbb4e66eb25158dff307012c4cc">number_of_kw_arguments</a>() const </td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(const wamp_call_result &amp;other)=delete (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>operator=</b>(wamp_call_result &amp;&amp;other) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_arguments</b>(const msgpack::object &amp;arguments) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>set_kw_arguments</b>(const msgpack::object &amp;kw_arguments) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>wamp_call_result</b>() (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>wamp_call_result</b>(msgpack::zone &amp;&amp;zone) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>operator=</b>(wamp_call_result &amp;&amp;other) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_arguments</b>(const msgpack::object &amp;arguments) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>set_kw_arguments</b>(const msgpack::object &amp;kw_arguments) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>wamp_call_result</b>() (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>wamp_call_result</b>(msgpack::zone &amp;&amp;zone) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>wamp_call_result</b>(const wamp_call_result &amp;other)=delete (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>wamp_call_result</b>(wamp_call_result &amp;&amp;other) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>wamp_call_result</b>(wamp_call_result &amp;&amp;other) (defined in <a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__call__result.html">autobahn::wamp_call_result</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

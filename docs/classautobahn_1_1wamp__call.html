@@ -11,6 +11,14 @@
         <title>AutobahnC++: autobahn::wamp_call Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__call.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__call.html">wamp_call</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -109,31 +127,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac227653842c924482acf5d798dd52f2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac227653842c924482acf5d798dd52f2f"></a>
+<tr class="memitem:a263297009ad4278d2c96a3ed8c98b366"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a263297009ad4278d2c96a3ed8c98b366"></a>
 boost::promise&lt; <a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>result</b> ()</td></tr>
-<tr class="separator:ac227653842c924482acf5d798dd52f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a263297009ad4278d2c96a3ed8c98b366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58a9d77418091dc6cab249f54c987d8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58a9d77418091dc6cab249f54c987d8a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_result</b> (<a class="el" href="classautobahn_1_1wamp__call__result.html">wamp_call_result</a> &amp;&amp;value)</td></tr>
 <tr class="separator:a58a9d77418091dc6cab249f54c987d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An outstanding wamp call. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+
+<p>Definition at line <a class="el" href="wamp__call_8hpp_source.html#l00042">42</a> of file <a class="el" href="wamp__call_8hpp_source.html">wamp_call.hpp</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/<a class="el" href="wamp__call_8hpp_source.html">wamp_call.hpp</a></li>
-<li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/wamp_call.ipp</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__call.html">wamp_call</a></li>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

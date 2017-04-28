@@ -1,0 +1,35 @@
+var annotated_dup =
+[
+    [ "autobahn", null, [
+      [ "abort_error", "classautobahn_1_1abort__error.html", "classautobahn_1_1abort__error" ],
+      [ "network_error", "classautobahn_1_1network__error.html", "classautobahn_1_1network__error" ],
+      [ "no_session_error", "classautobahn_1_1no__session__error.html", "classautobahn_1_1no__session__error" ],
+      [ "no_transport_error", "classautobahn_1_1no__transport__error.html", "classautobahn_1_1no__transport__error" ],
+      [ "protocol_error", "classautobahn_1_1protocol__error.html", "classautobahn_1_1protocol__error" ],
+      [ "wamp_authenticate", "classautobahn_1_1wamp__authenticate.html", "classautobahn_1_1wamp__authenticate" ],
+      [ "wamp_call", "classautobahn_1_1wamp__call.html", "classautobahn_1_1wamp__call" ],
+      [ "wamp_call_options", "classautobahn_1_1wamp__call__options.html", "classautobahn_1_1wamp__call__options" ],
+      [ "wamp_call_result", "classautobahn_1_1wamp__call__result.html", "classautobahn_1_1wamp__call__result" ],
+      [ "wamp_challenge", "classautobahn_1_1wamp__challenge.html", "classautobahn_1_1wamp__challenge" ],
+      [ "wamp_event", "classautobahn_1_1wamp__event.html", "classautobahn_1_1wamp__event" ],
+      [ "wamp_invocation_impl", "classautobahn_1_1wamp__invocation__impl.html", "classautobahn_1_1wamp__invocation__impl" ],
+      [ "wamp_message", "classautobahn_1_1wamp__message.html", "classautobahn_1_1wamp__message" ],
+      [ "wamp_publication", "classautobahn_1_1wamp__publication.html", "classautobahn_1_1wamp__publication" ],
+      [ "wamp_publish_options", "classautobahn_1_1wamp__publish__options.html", "classautobahn_1_1wamp__publish__options" ],
+      [ "wamp_rawsocket_transport", "classautobahn_1_1wamp__rawsocket__transport.html", "classautobahn_1_1wamp__rawsocket__transport" ],
+      [ "wamp_register_request", "classautobahn_1_1wamp__register__request.html", "classautobahn_1_1wamp__register__request" ],
+      [ "wamp_registration", "classautobahn_1_1wamp__registration.html", "classautobahn_1_1wamp__registration" ],
+      [ "wamp_session", "classautobahn_1_1wamp__session.html", "classautobahn_1_1wamp__session" ],
+      [ "wamp_subscribe_options", "classautobahn_1_1wamp__subscribe__options.html", "classautobahn_1_1wamp__subscribe__options" ],
+      [ "wamp_subscribe_request", "classautobahn_1_1wamp__subscribe__request.html", "classautobahn_1_1wamp__subscribe__request" ],
+      [ "wamp_subscription", "classautobahn_1_1wamp__subscription.html", "classautobahn_1_1wamp__subscription" ],
+      [ "wamp_tcp_transport", "classautobahn_1_1wamp__tcp__transport.html", "classautobahn_1_1wamp__tcp__transport" ],
+      [ "wamp_transport", "classautobahn_1_1wamp__transport.html", "classautobahn_1_1wamp__transport" ],
+      [ "wamp_transport_handler", "classautobahn_1_1wamp__transport__handler.html", "classautobahn_1_1wamp__transport__handler" ],
+      [ "wamp_unregister_request", "classautobahn_1_1wamp__unregister__request.html", "classautobahn_1_1wamp__unregister__request" ],
+      [ "wamp_unsubscribe_request", "classautobahn_1_1wamp__unsubscribe__request.html", "classautobahn_1_1wamp__unsubscribe__request" ],
+      [ "wamp_websocket_transport", "classautobahn_1_1wamp__websocket__transport.html", "classautobahn_1_1wamp__websocket__transport" ],
+      [ "wamp_websocketpp_websocket_transport", "classautobahn_1_1wamp__websocketpp__websocket__transport.html", "classautobahn_1_1wamp__websocketpp__websocket__transport" ]
+    ] ],
+    [ "derived_key_error", "classderived__key__error.html", null ]
+];

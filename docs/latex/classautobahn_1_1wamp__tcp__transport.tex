@@ -1,0 +1,59 @@
+\hypertarget{classautobahn_1_1wamp__tcp__transport}{}\section{autobahn\+:\+:wamp\+\_\+tcp\+\_\+transport Class Reference}
+\label{classautobahn_1_1wamp__tcp__transport}\index{autobahn\+::wamp\+\_\+tcp\+\_\+transport@{autobahn\+::wamp\+\_\+tcp\+\_\+transport}}
+
+
+A transport that provides rawsocket support over T\+CP.  
+
+
+
+
+{\ttfamily \#include $<$wamp\+\_\+tcp\+\_\+transport.\+hpp$>$}
+
+Inheritance diagram for autobahn\+:\+:wamp\+\_\+tcp\+\_\+transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.600000cm]{classautobahn_1_1wamp__tcp__transport}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries wamp\+\_\+tcp\+\_\+transport} (boost\+::asio\+::io\+\_\+service \&io\+\_\+service, const boost\+::asio\+::ip\+::tcp\+::endpoint \&remote\+\_\+endpoint, bool debug\+\_\+enabled=false)\hypertarget{classautobahn_1_1wamp__tcp__transport_a63d9d2467d2053b2536106d03cad5990}{}\label{classautobahn_1_1wamp__tcp__transport_a63d9d2467d2053b2536106d03cad5990}
+
+\item 
+virtual boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__tcp__transport_af2dbaa2cbc0d144e15995061c01a8ce1}{connect} () override
+\begin{DoxyCompactList}\small\item\em Attempts to connect the transport. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A transport that provides rawsocket support over T\+CP. 
+
+Definition at line 45 of file wamp\+\_\+tcp\+\_\+transport.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{autobahn\+::wamp\+\_\+tcp\+\_\+transport@{autobahn\+::wamp\+\_\+tcp\+\_\+transport}!connect@{connect}}
+\index{connect@{connect}!autobahn\+::wamp\+\_\+tcp\+\_\+transport@{autobahn\+::wamp\+\_\+tcp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{connect() override}{connect() override}}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+tcp\+\_\+transport\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classautobahn_1_1wamp__tcp__transport_af2dbaa2cbc0d144e15995061c01a8ce1}{}\label{classautobahn_1_1wamp__tcp__transport_af2dbaa2cbc0d144e15995061c01a8ce1}
+
+
+Attempts to connect the transport. 
+
+\begin{DoxyReturn}{Returns}
+A future that will be satisfied when the connect attempt has been made. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a2555c344ee08add2598e8aa90d809a9e}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oberstet/scm/crossbario/autobahn-\/cpp/autobahn/wamp\+\_\+tcp\+\_\+transport.\+hpp\end{DoxyCompactItemize}

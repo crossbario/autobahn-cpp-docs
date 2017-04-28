@@ -1,0 +1,71 @@
+\hypertarget{classautobahn_1_1wamp__websocketpp__websocket__transport}{}\section{autobahn\+:\+:wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport$<$ Config $>$ Class Template Reference}
+\label{classautobahn_1_1wamp__websocketpp__websocket__transport}\index{autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport$<$ Config $>$@{autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport$<$ Config $>$}}
+
+
+A transport that provides websocket support using Web\+Socket++ \href{https://github.com/zaphoyd/websocketpp}{\tt https\+://github.\+com/zaphoyd/websocketpp}.  
+
+
+
+
+{\ttfamily \#include $<$wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport.\+hpp$>$}
+
+Inheritance diagram for autobahn\+:\+:wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport$<$ Config $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.245989cm]{classautobahn_1_1wamp__websocketpp__websocket__transport}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef websocketpp\+::client$<$ Config $>$ {\bfseries client\+\_\+type}\hypertarget{classautobahn_1_1wamp__websocketpp__websocket__transport_a4cae6c2c127a0b80e128a5cbdb93edbc}{}\label{classautobahn_1_1wamp__websocketpp__websocket__transport_a4cae6c2c127a0b80e128a5cbdb93edbc}
+
+\item 
+typedef boost\+::lock\+\_\+guard$<$ boost\+::mutex $>$ {\bfseries scoped\+\_\+lock}\hypertarget{classautobahn_1_1wamp__websocketpp__websocket__transport_a24db5bbc3766d22da0553a64f5a529ea}{}\label{classautobahn_1_1wamp__websocketpp__websocket__transport_a24db5bbc3766d22da0553a64f5a529ea}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport} (client\+\_\+type \&client, const std\+::string \&uri, bool debug\+\_\+enabled=false)\hypertarget{classautobahn_1_1wamp__websocketpp__websocket__transport_aa26d8bdae2f9ca4cd0fa1a13202825f2}{}\label{classautobahn_1_1wamp__websocketpp__websocket__transport_aa26d8bdae2f9ca4cd0fa1a13202825f2}
+
+\item 
+virtual bool \hyperlink{classautobahn_1_1wamp__websocketpp__websocket__transport_a938b8275a75b4f925ba08966f6c8b109}{is\+\_\+connected} () const override
+\begin{DoxyCompactList}\small\item\em Determines if the transport is connected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Config$>$\\*
+class autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport$<$ Config $>$}
+
+A transport that provides websocket support using Web\+Socket++ \href{https://github.com/zaphoyd/websocketpp}{\tt https\+://github.\+com/zaphoyd/websocketpp}. 
+
+Definition at line 61 of file wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport@{autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport}!is\+\_\+connected@{is\+\_\+connected}}
+\index{is\+\_\+connected@{is\+\_\+connected}!autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport@{autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport}}
+\subsubsection[{\texorpdfstring{is\+\_\+connected() const override}{is_connected() const override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Config $>$ virtual bool {\bf autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport}$<$ Config $>$\+::is\+\_\+connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classautobahn_1_1wamp__websocketpp__websocket__transport_a938b8275a75b4f925ba08966f6c8b109}{}\label{classautobahn_1_1wamp__websocketpp__websocket__transport_a938b8275a75b4f925ba08966f6c8b109}
+
+
+Determines if the transport is connected. 
+
+\begin{DoxyReturn}{Returns}
+Whether or not the transport is connected. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classautobahn_1_1wamp__websocket__transport_aeedb36dcd8bca268dfc755802591faba}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oberstet/scm/crossbario/autobahn-\/cpp/autobahn/wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport.\+hpp\end{DoxyCompactItemize}

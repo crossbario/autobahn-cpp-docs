@@ -1,0 +1,256 @@
+\hypertarget{classautobahn_1_1wamp__transport}{}\section{autobahn\+:\+:wamp\+\_\+transport Class Reference}
+\label{classautobahn_1_1wamp__transport}\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+
+
+Provides an abstraction for a transport to be used by the session.  
+
+
+
+
+{\ttfamily \#include $<$wamp\+\_\+transport.\+hpp$>$}
+
+Inheritance diagram for autobahn\+:\+:wamp\+\_\+transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.417722cm]{classautobahn_1_1wamp__transport}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classautobahn_1_1wamp__transport_a834b28db4d03bdb3ff77a4638cc2867d}{pause\+\_\+handler} = std\+::function$<$ void()$>$\hypertarget{classautobahn_1_1wamp__transport_a834b28db4d03bdb3ff77a4638cc2867d}{}\label{classautobahn_1_1wamp__transport_a834b28db4d03bdb3ff77a4638cc2867d}
+
+\begin{DoxyCompactList}\small\item\em Handler to invoke when pausing transport transmission. \end{DoxyCompactList}\item 
+using \hyperlink{classautobahn_1_1wamp__transport_ad36057ec27420793db7d8d658f3f003c}{resume\+\_\+handler} = std\+::function$<$ void()$>$\hypertarget{classautobahn_1_1wamp__transport_ad36057ec27420793db7d8d658f3f003c}{}\label{classautobahn_1_1wamp__transport_ad36057ec27420793db7d8d658f3f003c}
+
+\begin{DoxyCompactList}\small\item\em Handler to invoke when resuming transport transmission. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classautobahn_1_1wamp__transport_a79205fa2b20ea4fa9a99448cc019085d}{$\sim$wamp\+\_\+transport} ()=default\hypertarget{classautobahn_1_1wamp__transport_a79205fa2b20ea4fa9a99448cc019085d}{}\label{classautobahn_1_1wamp__transport_a79205fa2b20ea4fa9a99448cc019085d}
+
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\item 
+virtual boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__transport_a4ea198cfb1e76bb0b1916029a2b66585}{connect} ()=0
+\begin{DoxyCompactList}\small\item\em Attempts to connect the transport. \end{DoxyCompactList}\item 
+virtual boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__transport_a5abfd162d32de8cd7b8a56dbe0a22508}{disconnect} ()=0
+\begin{DoxyCompactList}\small\item\em Attempts to disconnect the transport. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classautobahn_1_1wamp__transport_a270c3f477bc573f975bbcae8ce2e83d3}{is\+\_\+connected} () const =0
+\begin{DoxyCompactList}\small\item\em Determines if the transport is connected. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport_a75c9f6a2d4dc91974a0ab1bf1b22db6d}{send\+\_\+message} (\hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \&\&message)=0
+\begin{DoxyCompactList}\small\item\em Send the message synchronously over the transport. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport_ab85c7c4245d22400e85a69973f882576}{set\+\_\+pause\+\_\+handler} (\hyperlink{classautobahn_1_1wamp__transport_a834b28db4d03bdb3ff77a4638cc2867d}{pause\+\_\+handler} \&\&handler)=0
+\begin{DoxyCompactList}\small\item\em Set the handler to be invoked when the transport detects congestion sending to the remote peer and needs to apply backpressure on the application. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport_a96ed112feb74285454180113211ce8af}{set\+\_\+resume\+\_\+handler} (\hyperlink{classautobahn_1_1wamp__transport_ad36057ec27420793db7d8d658f3f003c}{resume\+\_\+handler} \&\&handler)=0
+\begin{DoxyCompactList}\small\item\em Set the handler to be invoked when the transport detects congestion has subsided on the remote peer and the application can resume sending messages. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport_a2cf54e8ebcd39dd9cb5a6bc524d622bf}{pause} ()=0
+\begin{DoxyCompactList}\small\item\em Pause receiving of messages. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport_a9af89639ddb25fc7c3922e01193afb40}{resume} ()=0
+\begin{DoxyCompactList}\small\item\em Resume receiving of messages. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport_aa66d4c464c03837ca2fb293001882b96}{attach} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classautobahn_1_1wamp__transport__handler}{wamp\+\_\+transport\+\_\+handler} $>$ \&handler)=0
+\begin{DoxyCompactList}\small\item\em Attaches a handler to the transport. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport_a69fc40bd16dfa8d519375a29c3b4276e}{detach} ()=0\hypertarget{classautobahn_1_1wamp__transport_a69fc40bd16dfa8d519375a29c3b4276e}{}\label{classautobahn_1_1wamp__transport_a69fc40bd16dfa8d519375a29c3b4276e}
+
+\begin{DoxyCompactList}\small\item\em Detaches the handler currently attached to the transport. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classautobahn_1_1wamp__transport_acb9dd60d96ec4197823bc522f91cdee8}{has\+\_\+handler} () const =0
+\begin{DoxyCompactList}\small\item\em Determines if the transport has a handler attached. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides an abstraction for a transport to be used by the session. 
+
+A wamp transport is defined as being message based, bidirectional, reliable, and ordered. 
+
+Definition at line 49 of file wamp\+\_\+transport.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!attach@{attach}}
+\index{attach@{attach}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{attach(const std\+::shared\+\_\+ptr$<$ wamp\+\_\+transport\+\_\+handler $>$ \&handler)=0}{attach(const std::shared_ptr< wamp_transport_handler > &handler)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+::attach (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf wamp\+\_\+transport\+\_\+handler} $>$ \&}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_aa66d4c464c03837ca2fb293001882b96}{}\label{classautobahn_1_1wamp__transport_aa66d4c464c03837ca2fb293001882b96}
+
+
+Attaches a handler to the transport. 
+
+Only one handler may be attached at any given time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The handler to attach to this transport. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a54bb783139b338d587347f1ed865b94c}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a54bb783139b338d587347f1ed865b94c}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_a50e5ef694980acdf33df523f7d764e52}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!connect@{connect}}
+\index{connect@{connect}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{connect()=0}{connect()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+transport\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_a4ea198cfb1e76bb0b1916029a2b66585}{}\label{classautobahn_1_1wamp__transport_a4ea198cfb1e76bb0b1916029a2b66585}
+
+
+Attempts to connect the transport. 
+
+\begin{DoxyReturn}{Returns}
+A future that will be satisfied when the connect attempt has been made. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a2555c344ee08add2598e8aa90d809a9e}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a2555c344ee08add2598e8aa90d809a9e}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, \hyperlink{classautobahn_1_1wamp__websocket__transport_ac7415c55676df83dd76dd96a6bc35628}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}, and \hyperlink{classautobahn_1_1wamp__tcp__transport_af2dbaa2cbc0d144e15995061c01a8ce1}{autobahn\+::wamp\+\_\+tcp\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{disconnect()=0}{disconnect()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+transport\+::disconnect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_a5abfd162d32de8cd7b8a56dbe0a22508}{}\label{classautobahn_1_1wamp__transport_a5abfd162d32de8cd7b8a56dbe0a22508}
+
+
+Attempts to disconnect the transport. 
+
+\begin{DoxyReturn}{Returns}
+A future that will be satisfied when the disconnect attempt has been made. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a7ae409074a0b522e3b1db87e417117bc}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a7ae409074a0b522e3b1db87e417117bc}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_a7fa5bdb8c83811e354db2784e5991aa8}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!has\+\_\+handler@{has\+\_\+handler}}
+\index{has\+\_\+handler@{has\+\_\+handler}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{has\+\_\+handler() const =0}{has_handler() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool autobahn\+::wamp\+\_\+transport\+::has\+\_\+handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_acb9dd60d96ec4197823bc522f91cdee8}{}\label{classautobahn_1_1wamp__transport_acb9dd60d96ec4197823bc522f91cdee8}
+
+
+Determines if the transport has a handler attached. 
+
+\begin{DoxyReturn}{Returns}
+Whether or not a handler is attached. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a89dedf7b3cbc23b24118f068cb8098f9}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a89dedf7b3cbc23b24118f068cb8098f9}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_a8238168035d76da4aaace2ae438cb79f}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!is\+\_\+connected@{is\+\_\+connected}}
+\index{is\+\_\+connected@{is\+\_\+connected}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{is\+\_\+connected() const =0}{is_connected() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool autobahn\+::wamp\+\_\+transport\+::is\+\_\+connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_a270c3f477bc573f975bbcae8ce2e83d3}{}\label{classautobahn_1_1wamp__transport_a270c3f477bc573f975bbcae8ce2e83d3}
+
+
+Determines if the transport is connected. 
+
+\begin{DoxyReturn}{Returns}
+Whether or not the transport is connected. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_ad987b3a015db76afa9fb35ecf1ef671d}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_ad987b3a015db76afa9fb35ecf1ef671d}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, \hyperlink{classautobahn_1_1wamp__websocket__transport_aeedb36dcd8bca268dfc755802591faba}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}, and \hyperlink{classautobahn_1_1wamp__websocketpp__websocket__transport_a938b8275a75b4f925ba08966f6c8b109}{autobahn\+::wamp\+\_\+websocketpp\+\_\+websocket\+\_\+transport$<$ Config $>$}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!pause@{pause}}
+\index{pause@{pause}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{pause()=0}{pause()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+::pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_a2cf54e8ebcd39dd9cb5a6bc524d622bf}{}\label{classautobahn_1_1wamp__transport_a2cf54e8ebcd39dd9cb5a6bc524d622bf}
+
+
+Pause receiving of messages. 
+
+This will prevent the transport from receiving any more messages until it has been resumed. This is used to excert backpressure on the sending peer. 
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a9bfdec8d0028004c4b4fd6e64df10f7f}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a9bfdec8d0028004c4b4fd6e64df10f7f}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_a093019f8a063a95a61c35a929f3f5724}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!resume@{resume}}
+\index{resume@{resume}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{resume()=0}{resume()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+::resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_a9af89639ddb25fc7c3922e01193afb40}{}\label{classautobahn_1_1wamp__transport_a9af89639ddb25fc7c3922e01193afb40}
+
+
+Resume receiving of messages. 
+
+The transport will now begin receiving messsages again and lift backpressure from the sending peer. 
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a1182039f8f8d0649075eb97ab912ad22}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a1182039f8f8d0649075eb97ab912ad22}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_a3074c50b8b8a4b30ed919ffb34db4a98}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!send\+\_\+message@{send\+\_\+message}}
+\index{send\+\_\+message@{send\+\_\+message}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{send\+\_\+message(wamp\+\_\+message \&\&message)=0}{send_message(wamp_message &&message)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+::send\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{{\bf wamp\+\_\+message} \&\&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_a75c9f6a2d4dc91974a0ab1bf1b22db6d}{}\label{classautobahn_1_1wamp__transport_a75c9f6a2d4dc91974a0ab1bf1b22db6d}
+
+
+Send the message synchronously over the transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to be sent. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a50479854025d275eb16c4e2cdcd8ca12}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a50479854025d275eb16c4e2cdcd8ca12}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_ac941e567680544f3c829d6f6de7cb999}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!set\+\_\+pause\+\_\+handler@{set\+\_\+pause\+\_\+handler}}
+\index{set\+\_\+pause\+\_\+handler@{set\+\_\+pause\+\_\+handler}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{set\+\_\+pause\+\_\+handler(pause\+\_\+handler \&\&handler)=0}{set_pause_handler(pause_handler &&handler)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+::set\+\_\+pause\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{{\bf pause\+\_\+handler} \&\&}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_ab85c7c4245d22400e85a69973f882576}{}\label{classautobahn_1_1wamp__transport_ab85c7c4245d22400e85a69973f882576}
+
+
+Set the handler to be invoked when the transport detects congestion sending to the remote peer and needs to apply backpressure on the application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The pause handler to be invoked. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a7a5dc1e0f1de859864b7905a5317fab1}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a7a5dc1e0f1de859864b7905a5317fab1}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_a94a0e0555dc2929f07f4306d331b2c08}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+\index{autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}!set\+\_\+resume\+\_\+handler@{set\+\_\+resume\+\_\+handler}}
+\index{set\+\_\+resume\+\_\+handler@{set\+\_\+resume\+\_\+handler}!autobahn\+::wamp\+\_\+transport@{autobahn\+::wamp\+\_\+transport}}
+\subsubsection[{\texorpdfstring{set\+\_\+resume\+\_\+handler(resume\+\_\+handler \&\&handler)=0}{set_resume_handler(resume_handler &&handler)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+::set\+\_\+resume\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{{\bf resume\+\_\+handler} \&\&}]{handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport_a96ed112feb74285454180113211ce8af}{}\label{classautobahn_1_1wamp__transport_a96ed112feb74285454180113211ce8af}
+
+
+Set the handler to be invoked when the transport detects congestion has subsided on the remote peer and the application can resume sending messages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The resume handler to be invoked. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a9659a6451e8fd027a08bfb39b8273b94}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ Socket $>$}, \hyperlink{classautobahn_1_1wamp__rawsocket__transport_a9659a6451e8fd027a08bfb39b8273b94}{autobahn\+::wamp\+\_\+rawsocket\+\_\+transport$<$ boost\+::asio\+::ip\+::tcp\+::socket $>$}, and \hyperlink{classautobahn_1_1wamp__websocket__transport_a0d8ded9c1d996bb5ef5b0a0247ad55cf}{autobahn\+::wamp\+\_\+websocket\+\_\+transport}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oberstet/scm/crossbario/autobahn-\/cpp/autobahn/wamp\+\_\+transport.\+hpp\end{DoxyCompactItemize}

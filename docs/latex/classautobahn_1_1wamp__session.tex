@@ -1,0 +1,430 @@
+\hypertarget{classautobahn_1_1wamp__session}{}\section{autobahn\+:\+:wamp\+\_\+session Class Reference}
+\label{classautobahn_1_1wamp__session}\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+
+
+Representation of a W\+A\+MP session.  
+
+
+
+
+{\ttfamily \#include $<$wamp\+\_\+session.\+hpp$>$}
+
+Inheritance diagram for autobahn\+:\+:wamp\+\_\+session\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.937716cm]{classautobahn_1_1wamp__session}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classautobahn_1_1wamp__session_a0693ad91bf2fe2952044979ad6d32ec4}{wamp\+\_\+session} (boost\+::asio\+::io\+\_\+service \&io\+\_\+service, bool debug\+\_\+enabled=false)
+\begin{DoxyCompactList}\small\item\em Create a new W\+A\+MP session. \end{DoxyCompactList}\item 
+boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__session_a50e587da630e209858a70ae342ee1fec}{start} ()
+\begin{DoxyCompactList}\small\item\em Establishes a session with the router. \end{DoxyCompactList}\item 
+boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__session_a735e96fa6dd856a0ffb03161ff1ca262}{stop} ()
+\begin{DoxyCompactList}\small\item\em Stops the session with the router. \end{DoxyCompactList}\item 
+boost\+::future$<$ uint64\+\_\+t $>$ \hyperlink{classautobahn_1_1wamp__session_aec0bc6ef02837fa3daaba07d9f053368}{join} (const std\+::string \&realm, const std\+::vector$<$ std\+::string $>$ \&authmethods=std\+::vector$<$ std\+::string $>$(), const std\+::string \&authid=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Join a realm with the session. \end{DoxyCompactList}\item 
+boost\+::future$<$ std\+::string $>$ \hyperlink{classautobahn_1_1wamp__session_a499c1a7f1e7c3a9da71cc1ec82521dfa}{leave} (const std\+::string \&reason=std\+::string(\char`\"{}wamp.\+error.\+close\+\_\+realm\char`\"{}))
+\begin{DoxyCompactList}\small\item\em Leave the realm. \end{DoxyCompactList}\item 
+boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__session_a404fcf00db6996043d66a36c38fbd9e7}{publish} (const std\+::string \&topic, const \hyperlink{classautobahn_1_1wamp__publish__options}{wamp\+\_\+publish\+\_\+options} \&options=\hyperlink{classautobahn_1_1wamp__publish__options}{wamp\+\_\+publish\+\_\+options}())
+\begin{DoxyCompactList}\small\item\em Publish an event with empty payload to a topic. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List $>$ }\\boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__session_a9ca2b82c99816275b2f13dff14facbb9}{publish} (const std\+::string \&topic, const List \&arguments, const \hyperlink{classautobahn_1_1wamp__publish__options}{wamp\+\_\+publish\+\_\+options} \&options=\hyperlink{classautobahn_1_1wamp__publish__options}{wamp\+\_\+publish\+\_\+options}())
+\begin{DoxyCompactList}\small\item\em Publish an event with positional payload to a topic. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List , typename Map $>$ }\\boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__session_a7d40d4e66b27abc1459bdd3abc18e0bc}{publish} (const std\+::string \&topic, const List \&arguments, const Map \&kw\+\_\+arguments, const \hyperlink{classautobahn_1_1wamp__publish__options}{wamp\+\_\+publish\+\_\+options} \&options=\hyperlink{classautobahn_1_1wamp__publish__options}{wamp\+\_\+publish\+\_\+options}())
+\begin{DoxyCompactList}\small\item\em Publish an event with both positional and keyword payload to a topic. \end{DoxyCompactList}\item 
+boost\+::future$<$ \hyperlink{classautobahn_1_1wamp__subscription}{wamp\+\_\+subscription} $>$ \hyperlink{classautobahn_1_1wamp__session_a3979afb4fef6801d9fe12a9c09183b27}{subscribe} (const std\+::string \&topic, const wamp\+\_\+event\+\_\+handler \&handler, const \hyperlink{classautobahn_1_1wamp__subscribe__options}{wamp\+\_\+subscribe\+\_\+options} \&options=\hyperlink{classautobahn_1_1wamp__subscribe__options}{wamp\+\_\+subscribe\+\_\+options}())
+\begin{DoxyCompactList}\small\item\em Subscribe a handler to a topic to receive events. \end{DoxyCompactList}\item 
+boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__session_a3f83202670838318dbec10eb4ec622b5}{unsubscribe} (const \hyperlink{classautobahn_1_1wamp__subscription}{wamp\+\_\+subscription} \&subscription)
+\begin{DoxyCompactList}\small\item\em Unubscribe a handler to previously subscribed topic. \end{DoxyCompactList}\item 
+boost\+::future$<$ \hyperlink{classautobahn_1_1wamp__call__result}{wamp\+\_\+call\+\_\+result} $>$ \hyperlink{classautobahn_1_1wamp__session_a506a115013039bfa8444353f8d0c93e5}{call} (const std\+::string \&procedure, const \hyperlink{classautobahn_1_1wamp__call__options}{wamp\+\_\+call\+\_\+options} \&options=\hyperlink{classautobahn_1_1wamp__call__options}{wamp\+\_\+call\+\_\+options}())
+\begin{DoxyCompactList}\small\item\em Calls a remote procedure with no arguments. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List $>$ }\\boost\+::future$<$ \hyperlink{classautobahn_1_1wamp__call__result}{wamp\+\_\+call\+\_\+result} $>$ \hyperlink{classautobahn_1_1wamp__session_ab4ebb8d501693b64bbf3419d72eb1d3c}{call} (const std\+::string \&procedure, const List \&arguments, const \hyperlink{classautobahn_1_1wamp__call__options}{wamp\+\_\+call\+\_\+options} \&options=\hyperlink{classautobahn_1_1wamp__call__options}{wamp\+\_\+call\+\_\+options}())
+\begin{DoxyCompactList}\small\item\em Calls a remote procedure with positional arguments. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List , typename Map $>$ }\\boost\+::future$<$ \hyperlink{classautobahn_1_1wamp__call__result}{wamp\+\_\+call\+\_\+result} $>$ \hyperlink{classautobahn_1_1wamp__session_a51e4e1390c1ce847909569be5be27e7e}{call} (const std\+::string \&procedure, const List \&arguments, const Map \&kw\+\_\+arguments, const \hyperlink{classautobahn_1_1wamp__call__options}{wamp\+\_\+call\+\_\+options} \&options=\hyperlink{classautobahn_1_1wamp__call__options}{wamp\+\_\+call\+\_\+options}())
+\begin{DoxyCompactList}\small\item\em Calls a remote procedure with positional and keyword arguments. \end{DoxyCompactList}\item 
+boost\+::future$<$ \hyperlink{classautobahn_1_1wamp__registration}{wamp\+\_\+registration} $>$ \hyperlink{classautobahn_1_1wamp__session_af69d02081f611e0e433f1f00263ca693}{provide} (const std\+::string \&uri, const wamp\+\_\+procedure \&procedure, const provide\+\_\+options \&options=provide\+\_\+options())
+\begin{DoxyCompactList}\small\item\em Register a procedure that can be called remotely. \end{DoxyCompactList}\item 
+boost\+::future$<$ void $>$ \hyperlink{classautobahn_1_1wamp__session_a029fdfb68ea7a2b31b5aaa6d7cce50d8}{unprovide} (const \hyperlink{classautobahn_1_1wamp__registration}{wamp\+\_\+registration} \&registration)
+\begin{DoxyCompactList}\small\item\em Unregister a handler to previosly registered service. \end{DoxyCompactList}\item 
+virtual boost\+::future$<$ \hyperlink{classautobahn_1_1wamp__authenticate}{wamp\+\_\+authenticate} $>$ \hyperlink{classautobahn_1_1wamp__session_ae48991590eed7b9d26b34c6d0a7928a0}{on\+\_\+challenge} (const \hyperlink{classautobahn_1_1wamp__challenge}{wamp\+\_\+challenge} \&challenge)
+\begin{DoxyCompactList}\small\item\em Function called by the session when authenticating. \end{DoxyCompactList}\item 
+const std\+::unordered\+\_\+map$<$ std\+::string, msgpack\+::object $>$ \& \hyperlink{classautobahn_1_1wamp__session_a80c666e67c8f82688cb4cf554b4b317b}{welcome\+\_\+details} ()
+\begin{DoxyCompactList}\small\item\em Accessor method to W\+E\+L\+C\+O\+ME D\+E\+T\+A\+I\+LS dictionary containing router roles and corresponding features, authid, authrole, ...) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of a W\+A\+MP session. 
+
+Definition at line 80 of file wamp\+\_\+session.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!wamp\+\_\+session@{wamp\+\_\+session}}
+\index{wamp\+\_\+session@{wamp\+\_\+session}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{wamp\+\_\+session(boost\+::asio\+::io\+\_\+service \&io\+\_\+service, bool debug\+\_\+enabled=false)}{wamp_session(boost::asio::io_service &io_service, bool debug_enabled=false)}}]{\setlength{\rightskip}{0pt plus 5cm}autobahn\+::wamp\+\_\+session\+::wamp\+\_\+session (
+\begin{DoxyParamCaption}
+\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service, }
+\item[{bool}]{debug\+\_\+enabled = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a0693ad91bf2fe2952044979ad6d32ec4}{}\label{classautobahn_1_1wamp__session_a0693ad91bf2fe2952044979ad6d32ec4}
+
+
+Create a new W\+A\+MP session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em io\+\_\+service} & The io service to drive event dispatching. \\
+\hline
+{\em debug\+\_\+enabled} & Whether or not to run in debug mode. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!call@{call}}
+\index{call@{call}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{call(const std\+::string \&procedure, const wamp\+\_\+call\+\_\+options \&options=wamp\+\_\+call\+\_\+options())}{call(const std::string &procedure, const wamp_call_options &options=wamp_call_options())}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<${\bf wamp\+\_\+call\+\_\+result}$>$ autobahn\+::wamp\+\_\+session\+::call (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{procedure, }
+\item[{const {\bf wamp\+\_\+call\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+call\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a506a115013039bfa8444353f8d0c93e5}{}\label{classautobahn_1_1wamp__session_a506a115013039bfa8444353f8d0c93e5}
+
+
+Calls a remote procedure with no arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em procedure} & The U\+RI of the remote procedure to call. \\
+\hline
+{\em options} & The options to pass in the call to the router. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to the result of the remote procedure call. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!call@{call}}
+\index{call@{call}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{call(const std\+::string \&procedure, const List \&arguments, const wamp\+\_\+call\+\_\+options \&options=wamp\+\_\+call\+\_\+options())}{call(const std::string &procedure, const List &arguments, const wamp_call_options &options=wamp_call_options())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List $>$ boost\+::future$<${\bf wamp\+\_\+call\+\_\+result}$>$ autobahn\+::wamp\+\_\+session\+::call (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{procedure, }
+\item[{const List \&}]{arguments, }
+\item[{const {\bf wamp\+\_\+call\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+call\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_ab4ebb8d501693b64bbf3419d72eb1d3c}{}\label{classautobahn_1_1wamp__session_ab4ebb8d501693b64bbf3419d72eb1d3c}
+
+
+Calls a remote procedure with positional arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em procedure} & The U\+RI of the remote procedure to call. \\
+\hline
+{\em arguments} & The positional arguments for the call. \\
+\hline
+{\em options} & The options to pass in the call to the router. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to the result of the remote procedure call. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!call@{call}}
+\index{call@{call}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{call(const std\+::string \&procedure, const List \&arguments, const Map \&kw\+\_\+arguments, const wamp\+\_\+call\+\_\+options \&options=wamp\+\_\+call\+\_\+options())}{call(const std::string &procedure, const List &arguments, const Map &kw_arguments, const wamp_call_options &options=wamp_call_options())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List , typename Map $>$ boost\+::future$<${\bf wamp\+\_\+call\+\_\+result}$>$ autobahn\+::wamp\+\_\+session\+::call (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{procedure, }
+\item[{const List \&}]{arguments, }
+\item[{const Map \&}]{kw\+\_\+arguments, }
+\item[{const {\bf wamp\+\_\+call\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+call\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a51e4e1390c1ce847909569be5be27e7e}{}\label{classautobahn_1_1wamp__session_a51e4e1390c1ce847909569be5be27e7e}
+
+
+Calls a remote procedure with positional and keyword arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em procedure} & The U\+RI of the remote procedure to call. \\
+\hline
+{\em arguments} & The positional arguments for the call. \\
+\hline
+{\em kw\+\_\+arguments} & The keyword arguments for the call. \\
+\hline
+{\em options} & The options to pass in the call to the router. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to the result of the remote procedure call. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!join@{join}}
+\index{join@{join}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{join(const std\+::string \&realm, const std\+::vector$<$ std\+::string $>$ \&authmethods=std\+::vector$<$ std\+::string $>$(), const std\+::string \&authid="""")}{join(const std::string &realm, const std::vector< std::string > &authmethods=std::vector< std::string >(), const std::string &authid="")}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$uint64\+\_\+t$>$ autobahn\+::wamp\+\_\+session\+::join (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{realm, }
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{authmethods = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}, }
+\item[{const std\+::string \&}]{authid = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_aec0bc6ef02837fa3daaba07d9f053368}{}\label{classautobahn_1_1wamp__session_aec0bc6ef02837fa3daaba07d9f053368}
+
+
+Join a realm with the session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em realm} & The realm to join on the application router. \\
+\hline
+{\em authmethods} & The authentication methods this instance support e.\+g. \char`\"{}wampcra\char`\"{},\char`\"{}ticket\char`\"{} \\
+\hline
+{\em authid} & The username or maybe an other identifier for the user to join. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves with the session ID when the realm was joined. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!leave@{leave}}
+\index{leave@{leave}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{leave(const std\+::string \&reason=std\+::string(""wamp.\+error.\+close\+\_\+realm""))}{leave(const std::string &reason=std::string("wamp.error.close_realm"))}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$std\+::string$>$ autobahn\+::wamp\+\_\+session\+::leave (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{reason = {\ttfamily std\+:\+:string(\char`\"{}wamp.error.close\+\_\+realm\char`\"{})}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a499c1a7f1e7c3a9da71cc1ec82521dfa}{}\label{classautobahn_1_1wamp__session_a499c1a7f1e7c3a9da71cc1ec82521dfa}
+
+
+Leave the realm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reason} & An optional W\+A\+MP U\+RI providing a reason for leaving. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves with the reason sent by the peer. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!on\+\_\+challenge@{on\+\_\+challenge}}
+\index{on\+\_\+challenge@{on\+\_\+challenge}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{on\+\_\+challenge(const wamp\+\_\+challenge \&challenge)}{on_challenge(const wamp_challenge &challenge)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual boost\+::future$<${\bf wamp\+\_\+authenticate}$>$ autobahn\+::wamp\+\_\+session\+::on\+\_\+challenge (
+\begin{DoxyParamCaption}
+\item[{const {\bf wamp\+\_\+challenge} \&}]{challenge}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classautobahn_1_1wamp__session_ae48991590eed7b9d26b34c6d0a7928a0}{}\label{classautobahn_1_1wamp__session_ae48991590eed7b9d26b34c6d0a7928a0}
+
+
+Function called by the session when authenticating. 
+
+It always has to be re-\/implemented (if authentication is part of the system).
+
+
+\begin{DoxyParams}{Parameters}
+{\em challenge} & The challenge from the router containing enough information for the system to prove membership. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to an authentication response. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!provide@{provide}}
+\index{provide@{provide}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{provide(const std\+::string \&uri, const wamp\+\_\+procedure \&procedure, const provide\+\_\+options \&options=provide\+\_\+options())}{provide(const std::string &uri, const wamp_procedure &procedure, const provide_options &options=provide_options())}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<${\bf wamp\+\_\+registration}$>$ autobahn\+::wamp\+\_\+session\+::provide (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{uri, }
+\item[{const wamp\+\_\+procedure \&}]{procedure, }
+\item[{const provide\+\_\+options \&}]{options = {\ttfamily provide\+\_\+options()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_af69d02081f611e0e433f1f00263ca693}{}\label{classautobahn_1_1wamp__session_af69d02081f611e0e433f1f00263ca693}
+
+
+Register a procedure that can be called remotely. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The U\+RI associated with the procedure. \\
+\hline
+{\em procedure} & The procedure to be exposed as a remotely callable procedure. \\
+\hline
+{\em options} & Options for registering the procedure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to a autobahn\+::registration 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!publish@{publish}}
+\index{publish@{publish}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{publish(const std\+::string \&topic, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())}{publish(const std::string &topic, const wamp_publish_options &options=wamp_publish_options())}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::publish (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{topic, }
+\item[{const {\bf wamp\+\_\+publish\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+publish\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a404fcf00db6996043d66a36c38fbd9e7}{}\label{classautobahn_1_1wamp__session_a404fcf00db6996043d66a36c38fbd9e7}
+
+
+Publish an event with empty payload to a topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & The U\+RI of the topic to publish to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves once the the topic has been published to. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!publish@{publish}}
+\index{publish@{publish}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{publish(const std\+::string \&topic, const List \&arguments, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())}{publish(const std::string &topic, const List &arguments, const wamp_publish_options &options=wamp_publish_options())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List $>$ boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::publish (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{topic, }
+\item[{const List \&}]{arguments, }
+\item[{const {\bf wamp\+\_\+publish\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+publish\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a9ca2b82c99816275b2f13dff14facbb9}{}\label{classautobahn_1_1wamp__session_a9ca2b82c99816275b2f13dff14facbb9}
+
+
+Publish an event with positional payload to a topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & The U\+RI of the topic to publish to. \\
+\hline
+{\em arguments} & The positional payload for the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves once the the topic has been published to. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!publish@{publish}}
+\index{publish@{publish}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{publish(const std\+::string \&topic, const List \&arguments, const Map \&kw\+\_\+arguments, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())}{publish(const std::string &topic, const List &arguments, const Map &kw_arguments, const wamp_publish_options &options=wamp_publish_options())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List , typename Map $>$ boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::publish (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{topic, }
+\item[{const List \&}]{arguments, }
+\item[{const Map \&}]{kw\+\_\+arguments, }
+\item[{const {\bf wamp\+\_\+publish\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+publish\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a7d40d4e66b27abc1459bdd3abc18e0bc}{}\label{classautobahn_1_1wamp__session_a7d40d4e66b27abc1459bdd3abc18e0bc}
+
+
+Publish an event with both positional and keyword payload to a topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & The U\+RI of the topic to publish to. \\
+\hline
+{\em arguments} & The positional payload for the event. \\
+\hline
+{\em kw\+\_\+arguments} & The keyword payload for the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves once the the topic has been published to. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!start@{start}}
+\index{start@{start}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{start()}{start()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a50e587da630e209858a70ae342ee1fec}{}\label{classautobahn_1_1wamp__session_a50e587da630e209858a70ae342ee1fec}
+
+
+Establishes a session with the router. 
+
+\begin{DoxyReturn}{Returns}
+A future that indicates if the session was successfully started. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!stop@{stop}}
+\index{stop@{stop}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{stop()}{stop()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a735e96fa6dd856a0ffb03161ff1ca262}{}\label{classautobahn_1_1wamp__session_a735e96fa6dd856a0ffb03161ff1ca262}
+
+
+Stops the session with the router. 
+
+\begin{DoxyReturn}{Returns}
+A future that indicates if the session was successfully stopped. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{subscribe(const std\+::string \&topic, const wamp\+\_\+event\+\_\+handler \&handler, const wamp\+\_\+subscribe\+\_\+options \&options=wamp\+\_\+subscribe\+\_\+options())}{subscribe(const std::string &topic, const wamp_event_handler &handler, const wamp_subscribe_options &options=wamp_subscribe_options())}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<${\bf wamp\+\_\+subscription}$>$ autobahn\+::wamp\+\_\+session\+::subscribe (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{topic, }
+\item[{const wamp\+\_\+event\+\_\+handler \&}]{handler, }
+\item[{const {\bf wamp\+\_\+subscribe\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+subscribe\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a3979afb4fef6801d9fe12a9c09183b27}{}\label{classautobahn_1_1wamp__session_a3979afb4fef6801d9fe12a9c09183b27}
+
+
+Subscribe a handler to a topic to receive events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & The U\+RI of the topic to subscribe to. \\
+\hline
+{\em handler} & The handler that will receive events under the subscription. \\
+\hline
+{\em options} & The options to pass in the subscribe request to the router. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to the autobahn\+::subscription. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!unprovide@{unprovide}}
+\index{unprovide@{unprovide}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{unprovide(const wamp\+\_\+registration \&registration)}{unprovide(const wamp_registration &registration)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::unprovide (
+\begin{DoxyParamCaption}
+\item[{const {\bf wamp\+\_\+registration} \&}]{registration}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a029fdfb68ea7a2b31b5aaa6d7cce50d8}{}\label{classautobahn_1_1wamp__session_a029fdfb68ea7a2b31b5aaa6d7cce50d8}
+
+
+Unregister a handler to previosly registered service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em registration} & The registration to unregister. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to the unregistered response. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{unsubscribe(const wamp\+\_\+subscription \&subscription)}{unsubscribe(const wamp_subscription &subscription)}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::unsubscribe (
+\begin{DoxyParamCaption}
+\item[{const {\bf wamp\+\_\+subscription} \&}]{subscription}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a3f83202670838318dbec10eb4ec622b5}{}\label{classautobahn_1_1wamp__session_a3f83202670838318dbec10eb4ec622b5}
+
+
+Unubscribe a handler to previously subscribed topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em subscription} & The subscription to unsubscribe from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves to the unsubscribed response. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}!welcome\+\_\+details@{welcome\+\_\+details}}
+\index{welcome\+\_\+details@{welcome\+\_\+details}!autobahn\+::wamp\+\_\+session@{autobahn\+::wamp\+\_\+session}}
+\subsubsection[{\texorpdfstring{welcome\+\_\+details()}{welcome_details()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::unordered\+\_\+map$<$std\+::string, msgpack\+::object$>$\& autobahn\+::wamp\+\_\+session\+::welcome\+\_\+details (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__session_a80c666e67c8f82688cb4cf554b4b317b}{}\label{classautobahn_1_1wamp__session_a80c666e67c8f82688cb4cf554b4b317b}
+
+
+Accessor method to W\+E\+L\+C\+O\+ME D\+E\+T\+A\+I\+LS dictionary containing router roles and corresponding features, authid, authrole, ...) 
+
+\begin{DoxyReturn}{Returns}
+A dictionary of objects received with W\+E\+L\+C\+O\+ME message upon joining. i.\+e. \{ \char`\"{}realm\char`\"{}\+: \char`\"{}$<$string$>$\char`\"{}, \char`\"{}authprovider\char`\"{}\+: \char`\"{}dynamic\char`\"{}, \char`\"{}roles\char`\"{}\+: \{ \char`\"{}broker\char`\"{}\+: \{ \char`\"{}features\char`\"{}\+: \{ \char`\"{}publisher\+\_\+identification\char`\"{}\+: true, \char`\"{}pattern\+\_\+based\+\_\+subscription\char`\"{}\+: true, ... \} \}, \char`\"{}dealer\char`\"{}\+: \{ \char`\"{}features\char`\"{}\+: \{ \char`\"{}pattern\+\_\+based\+\_\+registration\char`\"{}\+: true, \char`\"{}progressive\+\_\+call\+\_\+results\char`\"{}\+: true, ... \} \} \}, \char`\"{}authid\char`\"{}\+: \char`\"{}$<$assigned authid$>$\char`\"{}, \char`\"{}authrole\char`\"{}\+: \char`\"{}$<$assigned auth role$>$\char`\"{}, \char`\"{}authmethod\char`\"{}\+: \char`\"{}wampcra\char`\"{}, ... \} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oberstet/scm/crossbario/autobahn-\/cpp/autobahn/wamp\+\_\+session.\+hpp\end{DoxyCompactItemize}

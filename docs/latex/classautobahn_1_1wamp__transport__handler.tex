@@ -1,0 +1,95 @@
+\hypertarget{classautobahn_1_1wamp__transport__handler}{}\section{autobahn\+:\+:wamp\+\_\+transport\+\_\+handler Class Reference}
+\label{classautobahn_1_1wamp__transport__handler}\index{autobahn\+::wamp\+\_\+transport\+\_\+handler@{autobahn\+::wamp\+\_\+transport\+\_\+handler}}
+
+
+Provides an abstraction for associating a handler with a transport.  
+
+
+
+
+{\ttfamily \#include $<$wamp\+\_\+transport\+\_\+handler.\+hpp$>$}
+
+Inheritance diagram for autobahn\+:\+:wamp\+\_\+transport\+\_\+handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classautobahn_1_1wamp__transport__handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport__handler_ad931e9199fd0f138db0a21bebeafac96}{on\+\_\+attach} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classautobahn_1_1wamp__transport}{wamp\+\_\+transport} $>$ \&transport)=0
+\begin{DoxyCompactList}\small\item\em Called by the transport when attaching a handler. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport__handler_aa42e0c0bfdfca5b35d0c249539f8deea}{on\+\_\+detach} (bool was\+\_\+clean, const std\+::string \&reason)=0
+\begin{DoxyCompactList}\small\item\em Called by the transport when detaching a handler. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classautobahn_1_1wamp__transport__handler_ad7e506952de0a3c5b86d4d17a2baa2b5}{on\+\_\+message} (\hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \&\&message)=0
+\begin{DoxyCompactList}\small\item\em Called by the transport when a message is received. \end{DoxyCompactList}\item 
+virtual \hyperlink{classautobahn_1_1wamp__transport__handler_aa98540474a0fa1d79012d73fd1b74a7a}{$\sim$wamp\+\_\+transport\+\_\+handler} ()=default\hypertarget{classautobahn_1_1wamp__transport__handler_aa98540474a0fa1d79012d73fd1b74a7a}{}\label{classautobahn_1_1wamp__transport__handler_aa98540474a0fa1d79012d73fd1b74a7a}
+
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides an abstraction for associating a handler with a transport. 
+
+Definition at line 47 of file wamp\+\_\+transport\+\_\+handler.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{autobahn\+::wamp\+\_\+transport\+\_\+handler@{autobahn\+::wamp\+\_\+transport\+\_\+handler}!on\+\_\+attach@{on\+\_\+attach}}
+\index{on\+\_\+attach@{on\+\_\+attach}!autobahn\+::wamp\+\_\+transport\+\_\+handler@{autobahn\+::wamp\+\_\+transport\+\_\+handler}}
+\subsubsection[{\texorpdfstring{on\+\_\+attach(const std\+::shared\+\_\+ptr$<$ wamp\+\_\+transport $>$ \&transport)=0}{on_attach(const std::shared_ptr< wamp_transport > &transport)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+\_\+handler\+::on\+\_\+attach (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf wamp\+\_\+transport} $>$ \&}]{transport}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport__handler_ad931e9199fd0f138db0a21bebeafac96}{}\label{classautobahn_1_1wamp__transport__handler_ad931e9199fd0f138db0a21bebeafac96}
+
+
+Called by the transport when attaching a handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & The transport being attached to. \\
+\hline
+\end{DoxyParams}
+\index{autobahn\+::wamp\+\_\+transport\+\_\+handler@{autobahn\+::wamp\+\_\+transport\+\_\+handler}!on\+\_\+detach@{on\+\_\+detach}}
+\index{on\+\_\+detach@{on\+\_\+detach}!autobahn\+::wamp\+\_\+transport\+\_\+handler@{autobahn\+::wamp\+\_\+transport\+\_\+handler}}
+\subsubsection[{\texorpdfstring{on\+\_\+detach(bool was\+\_\+clean, const std\+::string \&reason)=0}{on_detach(bool was_clean, const std::string &reason)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+\_\+handler\+::on\+\_\+detach (
+\begin{DoxyParamCaption}
+\item[{bool}]{was\+\_\+clean, }
+\item[{const std\+::string \&}]{reason}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport__handler_aa42e0c0bfdfca5b35d0c249539f8deea}{}\label{classautobahn_1_1wamp__transport__handler_aa42e0c0bfdfca5b35d0c249539f8deea}
+
+
+Called by the transport when detaching a handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em was\+\_\+clean} & Whether or not the transport is cleanly detaching. \\
+\hline
+{\em reason} & The reason for detaching. \\
+\hline
+\end{DoxyParams}
+\index{autobahn\+::wamp\+\_\+transport\+\_\+handler@{autobahn\+::wamp\+\_\+transport\+\_\+handler}!on\+\_\+message@{on\+\_\+message}}
+\index{on\+\_\+message@{on\+\_\+message}!autobahn\+::wamp\+\_\+transport\+\_\+handler@{autobahn\+::wamp\+\_\+transport\+\_\+handler}}
+\subsubsection[{\texorpdfstring{on\+\_\+message(wamp\+\_\+message \&\&message)=0}{on_message(wamp_message &&message)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void autobahn\+::wamp\+\_\+transport\+\_\+handler\+::on\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{{\bf wamp\+\_\+message} \&\&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classautobahn_1_1wamp__transport__handler_ad7e506952de0a3c5b86d4d17a2baa2b5}{}\label{classautobahn_1_1wamp__transport__handler_ad7e506952de0a3c5b86d4d17a2baa2b5}
+
+
+Called by the transport when a message is received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message that has been received. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oberstet/scm/crossbario/autobahn-\/cpp/autobahn/wamp\+\_\+transport\+\_\+handler.\+hpp\end{DoxyCompactItemize}

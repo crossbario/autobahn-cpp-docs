@@ -11,6 +11,14 @@
         <title>AutobahnC++: autobahn::wamp_subscribe_request Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__subscribe__request.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__subscribe__request.html">wamp_subscribe_request</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -112,12 +130,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a240cc9e38147c44e6e7b7cb003a60fd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a240cc9e38147c44e6e7b7cb003a60fd8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>wamp_subscribe_request</b> (const wamp_event_handler &amp;handler)</td></tr>
 <tr class="separator:a240cc9e38147c44e6e7b7cb003a60fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a117bce8085670e2c535666ee7f8524"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a117bce8085670e2c535666ee7f8524"></a>
+<tr class="memitem:a6b2f2ecb127a6b9ab4c997106887c695"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b2f2ecb127a6b9ab4c997106887c695"></a>
 const wamp_event_handler &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>handler</b> () const </td></tr>
-<tr class="separator:a4a117bce8085670e2c535666ee7f8524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3589297f289881b8ba6fc890bb8ecb22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3589297f289881b8ba6fc890bb8ecb22"></a>
+<tr class="separator:a6b2f2ecb127a6b9ab4c997106887c695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf89c5ab1130cf19440dd3e699641bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcf89c5ab1130cf19440dd3e699641bf"></a>
 boost::promise&lt; <a class="el" href="classautobahn_1_1wamp__subscription.html">wamp_subscription</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>response</b> ()</td></tr>
-<tr class="separator:a3589297f289881b8ba6fc890bb8ecb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:afcf89c5ab1130cf19440dd3e699641bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c59e370b322d879526623654e79c86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4c59e370b322d879526623654e79c86"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_handler</b> (const wamp_event_handler &amp;handler) const </td></tr>
 <tr class="separator:ae4c59e370b322d879526623654e79c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,22 +145,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_response</b> (con
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An outstanding wamp call. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+
+<p>Definition at line <a class="el" href="wamp__subscribe__request_8hpp_source.html#l00041">41</a> of file <a class="el" href="wamp__subscribe__request_8hpp_source.html">wamp_subscribe_request.hpp</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/<a class="el" href="wamp__subscribe__request_8hpp_source.html">wamp_subscribe_request.hpp</a></li>
-<li>/home/oberstet/scm/crossbario/autobahn-cpp/autobahn/wamp_subscribe_request.ipp</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__subscribe__request.html">wamp_subscribe_request</a></li>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

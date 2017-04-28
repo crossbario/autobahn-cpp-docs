@@ -1,0 +1,280 @@
+\hypertarget{classautobahn_1_1wamp__message}{}\section{autobahn\+:\+:wamp\+\_\+message Class Reference}
+\label{classautobahn_1_1wamp__message}\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+
+
+A class that represents a wamp message in its simplest form.  
+
+
+
+
+{\ttfamily \#include $<$wamp\+\_\+message.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classautobahn_1_1wamp__message_a2986ec144b289c128508c0e839d81147}{message\+\_\+fields} = std\+::vector$<$ msgpack\+::object $>$\hypertarget{classautobahn_1_1wamp__message_a2986ec144b289c128508c0e839d81147}{}\label{classautobahn_1_1wamp__message_a2986ec144b289c128508c0e839d81147}
+
+\begin{DoxyCompactList}\small\item\em A convenience type for representing message fields. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classautobahn_1_1wamp__message_abc8ebed60c771d68f8713ce382499ae0}{wamp\+\_\+message} (std\+::size\+\_\+t num\+\_\+fields)
+\begin{DoxyCompactList}\small\item\em Constructs a wamp message with the given number of fields. \end{DoxyCompactList}\item 
+\hyperlink{classautobahn_1_1wamp__message_a0a84ab10bd0d1311c45f61735ca9e01a}{wamp\+\_\+message} (std\+::size\+\_\+t num\+\_\+fields, msgpack\+::zone \&\&\hyperlink{classautobahn_1_1wamp__message_ae8db458e6c133012e4caceefb56ff263}{zone})
+\begin{DoxyCompactList}\small\item\em Constructs a wamp message with the given number of fields. \end{DoxyCompactList}\item 
+\hyperlink{classautobahn_1_1wamp__message_ac808886c6c4d6c8520fbec12dbb6c037}{wamp\+\_\+message} (\hyperlink{classautobahn_1_1wamp__message_a2986ec144b289c128508c0e839d81147}{message\+\_\+fields} \&\&\hyperlink{classautobahn_1_1wamp__message_a7101933c7dadd25ba5f022854b53d3d8}{fields}, msgpack\+::zone \&\&\hyperlink{classautobahn_1_1wamp__message_ae8db458e6c133012e4caceefb56ff263}{zone})
+\begin{DoxyCompactList}\small\item\em Constructs a wamp message with the given fields. \end{DoxyCompactList}\item 
+{\bfseries wamp\+\_\+message} (const \hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \&other)=delete\hypertarget{classautobahn_1_1wamp__message_a6b72612e30f56c2d6003b772bd1e51f1}{}\label{classautobahn_1_1wamp__message_a6b72612e30f56c2d6003b772bd1e51f1}
+
+\item 
+{\bfseries wamp\+\_\+message} (\hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \&\&other)\hypertarget{classautobahn_1_1wamp__message_a20010988bd5420af0086fa6523a342e4}{}\label{classautobahn_1_1wamp__message_a20010988bd5420af0086fa6523a342e4}
+
+\item 
+\hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \& {\bfseries operator=} (const \hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \&other)=delete\hypertarget{classautobahn_1_1wamp__message_a647777a6ae25dfa7c7e8e3b62b577792}{}\label{classautobahn_1_1wamp__message_a647777a6ae25dfa7c7e8e3b62b577792}
+
+\item 
+\hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \& {\bfseries operator=} (\hyperlink{classautobahn_1_1wamp__message}{wamp\+\_\+message} \&\&other)\hypertarget{classautobahn_1_1wamp__message_ab8d6c9131640e48b8773fe18e5a36432}{}\label{classautobahn_1_1wamp__message_ab8d6c9131640e48b8773fe18e5a36432}
+
+\item 
+const msgpack\+::object \& \hyperlink{classautobahn_1_1wamp__message_a9804a6f45c3677cff4413a8c07a37598}{field} (std\+::size\+\_\+t index) const 
+\begin{DoxyCompactList}\small\item\em Retrieves the field at the specified index. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\Type \hyperlink{classautobahn_1_1wamp__message_a735b9160e14f1b0530ea564927668a6e}{field} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Retrieves the field at the specified index. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Type $>$ }\\void \hyperlink{classautobahn_1_1wamp__message_a16c244c17216a13baf9e59bd74285f64}{set\+\_\+field} (std\+::size\+\_\+t index, const Type \&type)
+\begin{DoxyCompactList}\small\item\em Sets the field at the specified index. \end{DoxyCompactList}\item 
+bool \hyperlink{classautobahn_1_1wamp__message_ac44296cb6a660ff0ee91ee3790e5c952}{is\+\_\+field\+\_\+type} (std\+::size\+\_\+t index, msgpack\+::type\+::object\+\_\+type type) const 
+\begin{DoxyCompactList}\small\item\em Determines if the field at the specified index is of the given type. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classautobahn_1_1wamp__message_a2076474f6f32eb4bcf24c0cc305dfc49}{size} () const 
+\begin{DoxyCompactList}\small\item\em Retrieves the number of fields in the message. \end{DoxyCompactList}\item 
+const \hyperlink{classautobahn_1_1wamp__message_a2986ec144b289c128508c0e839d81147}{message\+\_\+fields} \& \hyperlink{classautobahn_1_1wamp__message_a7101933c7dadd25ba5f022854b53d3d8}{fields} () const 
+\begin{DoxyCompactList}\small\item\em The message fields. \end{DoxyCompactList}\item 
+\hyperlink{classautobahn_1_1wamp__message_a2986ec144b289c128508c0e839d81147}{message\+\_\+fields} \&\& \hyperlink{classautobahn_1_1wamp__message_ab6e1cb7105986914cc602986789a7a61}{fields} ()
+\begin{DoxyCompactList}\small\item\em Pilfers the message fields. \end{DoxyCompactList}\item 
+msgpack\+::zone \&\& \hyperlink{classautobahn_1_1wamp__message_ae8db458e6c133012e4caceefb56ff263}{zone} ()
+\begin{DoxyCompactList}\small\item\em Pilfers the message zone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that represents a wamp message in its simplest form. 
+
+\mbox{[}field1, field2, field3, ...\mbox{]}
+
+Although not all arrays are valid wamp messages, this class simply provides the building blocks to construct any type of message.
+
+T\+O\+DO\+: Investigate the benefits of creating a hierarchy of wamp message types similar to what has been done for bonefish. 
+
+Definition at line 53 of file wamp\+\_\+message.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!wamp\+\_\+message@{wamp\+\_\+message}}
+\index{wamp\+\_\+message@{wamp\+\_\+message}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{wamp\+\_\+message(std\+::size\+\_\+t num\+\_\+fields)}{wamp_message(std::size_t num_fields)}}]{\setlength{\rightskip}{0pt plus 5cm}autobahn\+::wamp\+\_\+message\+::wamp\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{num\+\_\+fields}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__message_abc8ebed60c771d68f8713ce382499ae0}{}\label{classautobahn_1_1wamp__message_abc8ebed60c771d68f8713ce382499ae0}
+
+
+Constructs a wamp message with the given number of fields. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+fields} & The number of fields in the message. \\
+\hline
+\end{DoxyParams}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!wamp\+\_\+message@{wamp\+\_\+message}}
+\index{wamp\+\_\+message@{wamp\+\_\+message}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{wamp\+\_\+message(std\+::size\+\_\+t num\+\_\+fields, msgpack\+::zone \&\&zone)}{wamp_message(std::size_t num_fields, msgpack::zone &&zone)}}]{\setlength{\rightskip}{0pt plus 5cm}autobahn\+::wamp\+\_\+message\+::wamp\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{num\+\_\+fields, }
+\item[{msgpack\+::zone \&\&}]{zone}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__message_a0a84ab10bd0d1311c45f61735ca9e01a}{}\label{classautobahn_1_1wamp__message_a0a84ab10bd0d1311c45f61735ca9e01a}
+
+
+Constructs a wamp message with the given number of fields. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+fields} & The number of fields in the message. \\
+\hline
+{\em zone} & The zone used to allocate fields in the message. \\
+\hline
+\end{DoxyParams}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!wamp\+\_\+message@{wamp\+\_\+message}}
+\index{wamp\+\_\+message@{wamp\+\_\+message}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{wamp\+\_\+message(message\+\_\+fields \&\&fields, msgpack\+::zone \&\&zone)}{wamp_message(message_fields &&fields, msgpack::zone &&zone)}}]{\setlength{\rightskip}{0pt plus 5cm}autobahn\+::wamp\+\_\+message\+::wamp\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{{\bf message\+\_\+fields} \&\&}]{fields, }
+\item[{msgpack\+::zone \&\&}]{zone}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__message_ac808886c6c4d6c8520fbec12dbb6c037}{}\label{classautobahn_1_1wamp__message_ac808886c6c4d6c8520fbec12dbb6c037}
+
+
+Constructs a wamp message with the given fields. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields} & The fields in the message. \\
+\hline
+{\em zone} & The zone used to allocate fields in the message. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!field@{field}}
+\index{field@{field}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{field(std\+::size\+\_\+t index) const }{field(std::size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const msgpack\+::object\& autobahn\+::wamp\+\_\+message\+::field (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__message_a9804a6f45c3677cff4413a8c07a37598}{}\label{classautobahn_1_1wamp__message_a9804a6f45c3677cff4413a8c07a37598}
+
+
+Retrieves the field at the specified index. 
+
+Throws an exception if the index is out of bounds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the target field.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The retrieved type. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!field@{field}}
+\index{field@{field}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{field(std\+::size\+\_\+t index)}{field(std::size_t index)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ Type autobahn\+::wamp\+\_\+message\+::field (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__message_a735b9160e14f1b0530ea564927668a6e}{}\label{classautobahn_1_1wamp__message_a735b9160e14f1b0530ea564927668a6e}
+
+
+Retrieves the field at the specified index. 
+
+Throws an exception if the index is out of bounds or if the field cannot be retrieved as the specified type.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & The field\textquotesingle{}s type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the target field.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The retrieved type. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!fields@{fields}}
+\index{fields@{fields}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{fields() const }{fields() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf message\+\_\+fields}\& autobahn\+::wamp\+\_\+message\+::fields (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__message_a7101933c7dadd25ba5f022854b53d3d8}{}\label{classautobahn_1_1wamp__message_a7101933c7dadd25ba5f022854b53d3d8}
+
+
+The message fields. 
+
+\begin{DoxyReturn}{Returns}
+The message fields. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!fields@{fields}}
+\index{fields@{fields}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{fields()}{fields()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf message\+\_\+fields}\&\& autobahn\+::wamp\+\_\+message\+::fields (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__message_ab6e1cb7105986914cc602986789a7a61}{}\label{classautobahn_1_1wamp__message_ab6e1cb7105986914cc602986789a7a61}
+
+
+Pilfers the message fields. 
+
+\begin{DoxyReturn}{Returns}
+The message fields. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!is\+\_\+field\+\_\+type@{is\+\_\+field\+\_\+type}}
+\index{is\+\_\+field\+\_\+type@{is\+\_\+field\+\_\+type}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{is\+\_\+field\+\_\+type(std\+::size\+\_\+t index, msgpack\+::type\+::object\+\_\+type type) const }{is_field_type(std::size_t index, msgpack::type::object_type type) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool autobahn\+::wamp\+\_\+message\+::is\+\_\+field\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index, }
+\item[{msgpack\+::type\+::object\+\_\+type}]{type}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__message_ac44296cb6a660ff0ee91ee3790e5c952}{}\label{classautobahn_1_1wamp__message_ac44296cb6a660ff0ee91ee3790e5c952}
+
+
+Determines if the field at the specified index is of the given type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the target field. \\
+\hline
+{\em type} & The field type to check against. \\
+\hline
+\end{DoxyParams}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!set\+\_\+field@{set\+\_\+field}}
+\index{set\+\_\+field@{set\+\_\+field}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{set\+\_\+field(std\+::size\+\_\+t index, const Type \&type)}{set_field(std::size_t index, const Type &type)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Type $>$ void autobahn\+::wamp\+\_\+message\+::set\+\_\+field (
+\begin{DoxyParamCaption}
+\item[{std\+::size\+\_\+t}]{index, }
+\item[{const Type \&}]{type}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__message_a16c244c17216a13baf9e59bd74285f64}{}\label{classautobahn_1_1wamp__message_a16c244c17216a13baf9e59bd74285f64}
+
+
+Sets the field at the specified index. 
+
+Throws an exception if the index is out of bounds.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & The field\textquotesingle{}s type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the target field. \\
+\hline
+{\em type} & The type to store in the target field. \\
+\hline
+\end{DoxyParams}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!size@{size}}
+\index{size@{size}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::size\+\_\+t autobahn\+::wamp\+\_\+message\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classautobahn_1_1wamp__message_a2076474f6f32eb4bcf24c0cc305dfc49}{}\label{classautobahn_1_1wamp__message_a2076474f6f32eb4bcf24c0cc305dfc49}
+
+
+Retrieves the number of fields in the message. 
+
+\begin{DoxyReturn}{Returns}
+The number of fields in the message. 
+\end{DoxyReturn}
+\index{autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}!zone@{zone}}
+\index{zone@{zone}!autobahn\+::wamp\+\_\+message@{autobahn\+::wamp\+\_\+message}}
+\subsubsection[{\texorpdfstring{zone()}{zone()}}]{\setlength{\rightskip}{0pt plus 5cm}msgpack\+::zone\&\& autobahn\+::wamp\+\_\+message\+::zone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classautobahn_1_1wamp__message_ae8db458e6c133012e4caceefb56ff263}{}\label{classautobahn_1_1wamp__message_ae8db458e6c133012e4caceefb56ff263}
+
+
+Pilfers the message zone. 
+
+\begin{DoxyReturn}{Returns}
+The message zone. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/oberstet/scm/crossbario/autobahn-\/cpp/autobahn/wamp\+\_\+message.\+hpp\end{DoxyCompactItemize}

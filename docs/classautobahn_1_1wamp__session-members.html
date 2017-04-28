@@ -11,6 +11,14 @@
         <title>AutobahnC++: Member List</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__session.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__session.html">wamp_session</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">autobahn::wamp_session Member List</div>  </div>
@@ -101,37 +119,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#ab600074598f877502ec392284535726a">call</a>(const std::string &amp;procedure, const wamp_call_options &amp;options=wamp_call_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a02e2bd90ef9640b5f6979ecad68d1741">call</a>(const std::string &amp;procedure, const List &amp;arguments, const wamp_call_options &amp;options=wamp_call_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a1a718399ee9b222671418b08b70bb606">call</a>(const std::string &amp;procedure, const List &amp;arguments, const Map &amp;kw_arguments, const wamp_call_options &amp;options=wamp_call_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a2c4b665e8827fef73550909eff058d1b">join</a>(const std::string &amp;realm, const std::vector&lt; std::string &gt; &amp;authmethods=std::vector&lt; std::string &gt;(), const std::string &amp;authid=&quot;&quot;)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a94bbcb1a469dbb81167e45ac352b7956">leave</a>(const std::string &amp;reason=std::string(&quot;wamp.error.close_realm&quot;))</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a58e81f1587d6be96484328cf000ec2a8">on_challenge</a>(const wamp_challenge &amp;challenge)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a5264a0ee2c0ee929e596156f7e1db1be">provide</a>(const std::string &amp;uri, const wamp_procedure &amp;procedure, const provide_options &amp;options=provide_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#aba5c1019893481a5d55df0b6ab645789">publish</a>(const std::string &amp;topic, const wamp_publish_options &amp;options=wamp_publish_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#acc2ceaa6452426037cb27506b5cf1649">publish</a>(const std::string &amp;topic, const List &amp;arguments, const wamp_publish_options &amp;options=wamp_publish_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a762e9b39cbc60812cd72a2e173e57a16">publish</a>(const std::string &amp;topic, const List &amp;arguments, const Map &amp;kw_arguments, const wamp_publish_options &amp;options=wamp_publish_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a88d4681d9b40c6d952849b565178b1d2">start</a>()</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#ab5e6b6a1c9568f3917fd62bac53e2a5f">stop</a>()</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a146c3f4f084c48c1347c625a407d51cd">subscribe</a>(const std::string &amp;topic, const wamp_event_handler &amp;handler, const wamp_subscribe_options &amp;options=wamp_subscribe_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a424faa7b0ae5cb5cc84beaa7ddc37e83">unprovide</a>(const wamp_registration &amp;registration)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a1e64d52d7592c4bb88d826fb96126e0c">unsubscribe</a>(const wamp_subscription &amp;subscription)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a0693ad91bf2fe2952044979ad6d32ec4">wamp_session</a>(boost::asio::io_service &amp;io_service, bool debug_enabled=false)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a2e7cdf1613be8eef5d5448fcc447b52d">welcome_details</a>()</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~wamp_session</b>() (defined in <a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a506a115013039bfa8444353f8d0c93e5">call</a>(const std::string &amp;procedure, const wamp_call_options &amp;options=wamp_call_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#ab4ebb8d501693b64bbf3419d72eb1d3c">call</a>(const std::string &amp;procedure, const List &amp;arguments, const wamp_call_options &amp;options=wamp_call_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a51e4e1390c1ce847909569be5be27e7e">call</a>(const std::string &amp;procedure, const List &amp;arguments, const Map &amp;kw_arguments, const wamp_call_options &amp;options=wamp_call_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#aec0bc6ef02837fa3daaba07d9f053368">join</a>(const std::string &amp;realm, const std::vector&lt; std::string &gt; &amp;authmethods=std::vector&lt; std::string &gt;(), const std::string &amp;authid=&quot;&quot;)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a499c1a7f1e7c3a9da71cc1ec82521dfa">leave</a>(const std::string &amp;reason=std::string(&quot;wamp.error.close_realm&quot;))</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#ae48991590eed7b9d26b34c6d0a7928a0">on_challenge</a>(const wamp_challenge &amp;challenge)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#af69d02081f611e0e433f1f00263ca693">provide</a>(const std::string &amp;uri, const wamp_procedure &amp;procedure, const provide_options &amp;options=provide_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a404fcf00db6996043d66a36c38fbd9e7">publish</a>(const std::string &amp;topic, const wamp_publish_options &amp;options=wamp_publish_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a9ca2b82c99816275b2f13dff14facbb9">publish</a>(const std::string &amp;topic, const List &amp;arguments, const wamp_publish_options &amp;options=wamp_publish_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a7d40d4e66b27abc1459bdd3abc18e0bc">publish</a>(const std::string &amp;topic, const List &amp;arguments, const Map &amp;kw_arguments, const wamp_publish_options &amp;options=wamp_publish_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a50e587da630e209858a70ae342ee1fec">start</a>()</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a735e96fa6dd856a0ffb03161ff1ca262">stop</a>()</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a3979afb4fef6801d9fe12a9c09183b27">subscribe</a>(const std::string &amp;topic, const wamp_event_handler &amp;handler, const wamp_subscribe_options &amp;options=wamp_subscribe_options())</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a029fdfb68ea7a2b31b5aaa6d7cce50d8">unprovide</a>(const wamp_registration &amp;registration)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a3f83202670838318dbec10eb4ec622b5">unsubscribe</a>(const wamp_subscription &amp;subscription)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a0693ad91bf2fe2952044979ad6d32ec4">wamp_session</a>(boost::asio::io_service &amp;io_service, bool debug_enabled=false)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html#a80c666e67c8f82688cb4cf554b4b317b">welcome_details</a>()</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~wamp_session</b>() (defined in <a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__session.html">autobahn::wamp_session</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport__handler.html#aa98540474a0fa1d79012d73fd1b74a7a">~wamp_transport_handler</a>()=default</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport__handler.html">autobahn::wamp_transport_handler</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

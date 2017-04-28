@@ -11,6 +11,14 @@
         <title>AutobahnC++: Member List</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
+        <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -74,6 +82,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classautobahn_1_1wamp__rawsocket__transport.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,11 +111,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>autobahn</b></li><li class="navelem"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">wamp_rawsocket_transport</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">autobahn::wamp_rawsocket_transport&lt; Socket &gt; Member List</div>  </div>
@@ -101,37 +119,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a385ffc9f98571a46dbbe9a6b33da53ff">attach</a>(const std::shared_ptr&lt; wamp_transport_handler &gt; &amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aea1864d6174cbcc7d7181f20c1222afe">connect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aac62d74fde35098e8a830a09cede6ac6">detach</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a07891c8d9d112615de639e4e3bc1aa20">disconnect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a54bb783139b338d587347f1ed865b94c">attach</a>(const std::shared_ptr&lt; wamp_transport_handler &gt; &amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a2555c344ee08add2598e8aa90d809a9e">connect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9622ba671182807e0f8e9abce9bb6ab9">detach</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a7ae409074a0b522e3b1db87e417117bc">disconnect</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ae262d9ecdd93daae0e44b5b557bf24e8">endpoint_type</a> typedef</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a1d9dffc838cd2738b61c0a67f1b824cf">has_handler</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a36d42728b024747a7af5d42eee125d54">is_connected</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ab73a56bb90f91813f2e526c39e95385a">pause</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a89dedf7b3cbc23b24118f068cb8098f9">has_handler</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#ad987b3a015db76afa9fb35ecf1ef671d">is_connected</a>() const override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9bfdec8d0028004c4b4fd6e64df10f7f">pause</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html#a834b28db4d03bdb3ff77a4638cc2867d">pause_handler</a> typedef</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html">autobahn::wamp_transport</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a2ad17fd30de5381f98b3d684f2a3cfc8">resume</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a1182039f8f8d0649075eb97ab912ad22">resume</a>() override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html#ad36057ec27420793db7d8d658f3f003c">resume_handler</a> typedef</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html">autobahn::wamp_transport</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aaf8be5f49ebd2f8d531dd5222ba21bcb">send_message</a>(wamp_message &amp;&amp;message) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#af83590e2f389835e8b6fef7be8699465">set_pause_handler</a>(pause_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a94f4f9bf95969cc7a03b7891afbfe741">set_resume_handler</a>(resume_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a50479854025d275eb16c4e2cdcd8ca12">send_message</a>(wamp_message &amp;&amp;message) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a7a5dc1e0f1de859864b7905a5317fab1">set_pause_handler</a>(pause_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a9659a6451e8fd027a08bfb39b8273b94">set_resume_handler</a>(resume_handler &amp;&amp;handler) override</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>socket</b>() (defined in <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#aa11aea0af1d26f4ead1cfb07f877034b">socket_type</a> typedef</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html#a304576feebe5400ac00acb9deb330318">wamp_rawsocket_transport</a>(boost::asio::io_service &amp;io_service, const endpoint_type &amp;remote_endpoint, bool debug_enabled=false)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>~wamp_rawsocket_transport</b>() override=default (defined in <a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a>)</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__rawsocket__transport.html">autobahn::wamp_rawsocket_transport&lt; Socket &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html#a79205fa2b20ea4fa9a99448cc019085d">~wamp_transport</a>()=default</td><td class="entry"><a class="el" href="classautobahn_1_1wamp__transport.html">autobahn::wamp_transport</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Fri Apr 28 2017 19:57:13 for AutobahnC++ by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 19:22:55 for AutobahnC++ by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.11
-</small></address>
+</div>
 </body>
 </html>

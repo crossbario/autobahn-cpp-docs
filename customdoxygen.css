@@ -1,3 +1,7 @@
+body, table, div, p, dl {
+  font: 400 18px/26px Roboto,sans-serif;
+}
+
 h1, .h1, h2, .h2, h3, .h3{
     font-weight: 200 !important;
 }

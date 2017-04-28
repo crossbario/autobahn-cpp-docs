@@ -1,0 +1,98 @@
+\hypertarget{group___p_u_b}{}\section{Publishing events}
+\label{group___p_u_b}\index{Publishing events@{Publishing events}}
+
+
+Publishing events is done from a session using one of the following functions.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classautobahn_1_1wamp__publish__options}{autobahn\+::wamp\+\_\+publish\+\_\+options}
+\begin{DoxyCompactList}\small\item\em Options for publishing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::future$<$ void $>$ \hyperlink{group___p_u_b_ga404fcf00db6996043d66a36c38fbd9e7}{autobahn\+::wamp\+\_\+session\+::publish} (const std\+::string \&topic, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())
+\begin{DoxyCompactList}\small\item\em Publish an event with empty payload to a topic. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List $>$ }\\boost\+::future$<$ void $>$ \hyperlink{group___p_u_b_ga9ca2b82c99816275b2f13dff14facbb9}{autobahn\+::wamp\+\_\+session\+::publish} (const std\+::string \&topic, const List \&arguments, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())
+\begin{DoxyCompactList}\small\item\em Publish an event with positional payload to a topic. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename List , typename Map $>$ }\\boost\+::future$<$ void $>$ \hyperlink{group___p_u_b_ga7d40d4e66b27abc1459bdd3abc18e0bc}{autobahn\+::wamp\+\_\+session\+::publish} (const std\+::string \&topic, const List \&arguments, const Map \&kw\+\_\+arguments, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())
+\begin{DoxyCompactList}\small\item\em Publish an event with both positional and keyword payload to a topic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Publishing events is done from a session using one of the following functions. 
+
+When a W\+A\+MP session has been established, the session can be used to publish event at the router, which in turn will dispatch the event to all eligible and authorized subscribes to the topic. 
+
+\subsection{Function Documentation}
+\index{Publishing events@{Publishing events}!publish@{publish}}
+\index{publish@{publish}!Publishing events@{Publishing events}}
+\subsubsection[{\texorpdfstring{publish(const std\+::string \&topic, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())}{publish(const std::string &topic, const wamp_publish_options &options=wamp_publish_options())}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::publish (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{topic, }
+\item[{const {\bf wamp\+\_\+publish\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+publish\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_u_b_ga404fcf00db6996043d66a36c38fbd9e7}{}\label{group___p_u_b_ga404fcf00db6996043d66a36c38fbd9e7}
+
+
+Publish an event with empty payload to a topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & The U\+RI of the topic to publish to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves once the the topic has been published to. 
+\end{DoxyReturn}
+\index{Publishing events@{Publishing events}!publish@{publish}}
+\index{publish@{publish}!Publishing events@{Publishing events}}
+\subsubsection[{\texorpdfstring{publish(const std\+::string \&topic, const List \&arguments, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())}{publish(const std::string &topic, const List &arguments, const wamp_publish_options &options=wamp_publish_options())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List $>$ boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::publish (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{topic, }
+\item[{const List \&}]{arguments, }
+\item[{const {\bf wamp\+\_\+publish\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+publish\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_u_b_ga9ca2b82c99816275b2f13dff14facbb9}{}\label{group___p_u_b_ga9ca2b82c99816275b2f13dff14facbb9}
+
+
+Publish an event with positional payload to a topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & The U\+RI of the topic to publish to. \\
+\hline
+{\em arguments} & The positional payload for the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves once the the topic has been published to. 
+\end{DoxyReturn}
+\index{Publishing events@{Publishing events}!publish@{publish}}
+\index{publish@{publish}!Publishing events@{Publishing events}}
+\subsubsection[{\texorpdfstring{publish(const std\+::string \&topic, const List \&arguments, const Map \&kw\+\_\+arguments, const wamp\+\_\+publish\+\_\+options \&options=wamp\+\_\+publish\+\_\+options())}{publish(const std::string &topic, const List &arguments, const Map &kw_arguments, const wamp_publish_options &options=wamp_publish_options())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename List , typename Map $>$ boost\+::future$<$void$>$ autobahn\+::wamp\+\_\+session\+::publish (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{topic, }
+\item[{const List \&}]{arguments, }
+\item[{const Map \&}]{kw\+\_\+arguments, }
+\item[{const {\bf wamp\+\_\+publish\+\_\+options} \&}]{options = {\ttfamily {\bf wamp\+\_\+publish\+\_\+options}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{group___p_u_b_ga7d40d4e66b27abc1459bdd3abc18e0bc}{}\label{group___p_u_b_ga7d40d4e66b27abc1459bdd3abc18e0bc}
+
+
+Publish an event with both positional and keyword payload to a topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em topic} & The U\+RI of the topic to publish to. \\
+\hline
+{\em arguments} & The positional payload for the event. \\
+\hline
+{\em kw\+\_\+arguments} & The keyword payload for the event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A future that resolves once the the topic has been published to. 
+\end{DoxyReturn}

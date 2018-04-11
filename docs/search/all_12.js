@@ -29,5 +29,5 @@ var searchData=
   ['wamp_5fwebsocket_5ftransport',['wamp_websocket_transport',['../classautobahn_1_1wamp__websocket__transport.html',1,'autobahn']]],
   ['wamp_5fwebsocket_5ftransport',['wamp_websocket_transport',['../classautobahn_1_1wamp__websocket__transport.html#a4f49ed26ca9614e26709dd3e469c9132',1,'autobahn::wamp_websocket_transport']]],
   ['wamp_5fwebsocketpp_5fwebsocket_5ftransport',['wamp_websocketpp_websocket_transport',['../classautobahn_1_1wamp__websocketpp__websocket__transport.html',1,'autobahn']]],
-  ['welcome_5fdetails',['welcome_details',['../classautobahn_1_1wamp__session.html#a80c666e67c8f82688cb4cf554b4b317b',1,'autobahn::wamp_session']]]
+  ['welcome_5fdetails',['welcome_details',['../classautobahn_1_1wamp__session.html#a2e7cdf1613be8eef5d5448fcc447b52d',1,'autobahn::wamp_session']]]
 ];

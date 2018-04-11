@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['publishing_20events',['Publishing events',['../group___p_u_b.html',1,'']]]
+  ['publishing_20events',['Publishing events',['../group__PUB.html',1,'']]]
 ];

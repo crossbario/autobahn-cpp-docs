@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unprovide',['unprovide',['../classautobahn_1_1wamp__session.html#a424faa7b0ae5cb5cc84beaa7ddc37e83',1,'autobahn::wamp_session']]],
-  ['unsubscribe',['unsubscribe',['../classautobahn_1_1wamp__session.html#a1e64d52d7592c4bb88d826fb96126e0c',1,'autobahn::wamp_session']]],
-  ['uri',['uri',['../classautobahn_1_1wamp__event.html#ac98e6b5eafeb90ff7aa39e8cf9d77b6b',1,'autobahn::wamp_event::uri()'],['../classautobahn_1_1wamp__invocation__impl.html#a64b61c41b41552fcb99340c86acc9f5e',1,'autobahn::wamp_invocation_impl::uri()']]]
+  ['unprovide',['unprovide',['../classautobahn_1_1wamp__session.html#a029fdfb68ea7a2b31b5aaa6d7cce50d8',1,'autobahn::wamp_session']]],
+  ['unsubscribe',['unsubscribe',['../classautobahn_1_1wamp__session.html#a3f83202670838318dbec10eb4ec622b5',1,'autobahn::wamp_session']]],
+  ['uri',['uri',['../classautobahn_1_1wamp__event.html#a56143766b218b526e7197a21b55eb8d8',1,'autobahn::wamp_event::uri()'],['../classautobahn_1_1wamp__invocation__impl.html#af54d8b7be876ae06318e8af927674c4a',1,'autobahn::wamp_invocation_impl::uri()']]]
 ];
